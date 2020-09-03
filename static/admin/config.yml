@@ -21,7 +21,7 @@ collections:
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: text}
           - {label: Services, name: services, widget: list, fields: [{label: Image, name: image, widget: image}, {label: title, name: title, widget: string}]}
-          - {label: WhyBlock, name: whyblock, widget: object, fields: [{label: Title, name: title, widget: string}, {label: WhyImage, name: whyimage, widget: image}, {label: WhyList, name: whylist, widget: list, fields: [{label: WhyItemTitle, name: whyitemtitle, widget: title}, {label: Text, name: text, widget: text}]}]}
+          - {label: WhyBlock, name: whyblock, widget: object, fields: [{label: Title, name: title, widget: string}, {label: WhyImage, name: whyimage, widget: image}, {label: WhyList, name: whylist, widget: list, fields: [{label: WhyItemTitle, name: whyitemtitle, widget: string}, {label: Text, name: text, widget: text}]}]}
           # - {label: Offerings, name: offerings, widget: object, fields: [{label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
           # - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]} ADDING GOOGLE TESTIMONIALS
           - {label: "Meta Title", name: "meta_title", widget: "string"}
