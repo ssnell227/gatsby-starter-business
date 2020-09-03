@@ -6,6 +6,7 @@ import Layout from '../components/Layout'
 
 const ContactPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
+  console.log(data, 'contact data')
   return (
     <Layout>
       <ContactPageTemplate
@@ -29,7 +30,7 @@ ContactPage.propTypes = {
 export default ContactPage
 
 export const contactPageQuery = graphql`
-  query ContactPage($id: String!) {
+  query ContactPage($id: String) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
