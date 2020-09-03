@@ -1,9 +1,35 @@
 ---
 templateKey: home-page
-title: BLAHAAHBHAHA
-heading: Lorem ipsum dolor sit ametasdf
-description: Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-  consectetur, adipisci velit...
+carousel:
+  image1: /img/yaroslav-muzychenko-0x7rt228sgm-unsplash.jpg
+  image2: /img/tools.jpg
+  image3: /img/ryan-wallace-skflpoxg1rq-unsplash.jpg
+heading: Fremont County Home Inspection
+description: Offering comprehensive, affordable home inspection services that
+  are customized to your needs.  All services are provided by a certified home
+  inspector.  We serve all areas in Fremont County, WY, and are now able to
+  offer services in the surrounding areas (including Carbon, Hot Springs,
+  Natrona, Park, Sublette, Sweetwater, Teton, and Washakie Counties).  We pride
+  ourselves on quality, prompt availability, quick inspection report turnaround,
+  and excellent customer service.
+services:
+  - image: /img/outsite-co-r-lk3sqlibw-unsplash.jpg
+    title: Home Inspections
+  - image: /img/charles-deluvio-qja6wdmrnwm-unsplash.jpg
+    title: Asbesdos testing
+  - image: /img/tim-mossholder-vj1enh83l_a-unsplash.jpg
+    title: Lead Testing
+  - image: /img/featured-testing-for-carbon-monoxide-in-the-home.jpg
+    title: Radon testing
+  - image: /img/7513b791b31ac7fd1514962eed7bbf94w-c0xd-w685_h860_q80.jpg
+    title: Well water testing
+whyblock:
+  title: Why choose us?
+  whyimage: /img/unnamed.jpg
+  whylist: []
+meta_description: Offering comprehensive, affordable home inspection services
+  that are customized to your needs. We serve all areas in Fremont County, WY,
+  and are now able to offer services in the surrounding areas.
 offerings:
   blurbs:
     - image: /img/coffee.png
@@ -65,9 +91,6 @@ testimonials:
     quote: Fusce porttitor vulputate enim, nec blandit magna gravida et. Etiam et
       dignissim ligula.  Lorem ipsum dolor sit amet, consectetur adipiscing
       elit.
-meta_title: Home | Gatsby Starter Business
-meta_description: Cum sociis natoque penatibus et magnis dis parturient montes,
-  nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia
-  quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras
-  mattis consectetur purus sit amet fermentum.
+title: BLAHAAHBHAHA
+meta_title: Home | Fremont County Home Inspection
 ---
