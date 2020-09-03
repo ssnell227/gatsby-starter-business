@@ -19,8 +19,8 @@ collections:
           # - {label: Title, name: SecondTitle, widget: string}
           - {label: Carousel, name: carousel, widget: object, fields: [{label: CarouselImage1, name: image1, widget: image},{label: CarouselImage2, name: image2, widget: image}, {label: CarouselImage3, name: image3, widget: image}]}
           - {label: Heading, name: heading, widget: string}
-          - {label: Description, name: description, widget: string}
-          - {label: Services, name: services, widget: object, fields: [{label: ServiceImage1, name: image1, widget: image},{label: ServiceImage2, name: image2, widget: image}, {label: ServiceImage3, name: image3, widget: image}, {label: ServiceImage4, name: image4, widget: image}]}
+          - {label: Description, name: description, widget: text}
+          - {label: Services, name: services, widget: list, fields: [{label: Image, name: image, widget: image}, {label: title, name: title, widget: string}]}
           - {label: WhyBlock, name: whyblock, widget: object, fields: [{label: Title, name: title, widget: string}, {label: WhyImage, name: whyimage, widget: image}, {label: WhyList, name: whylist, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
           # - {label: Offerings, name: offerings, widget: object, fields: [{label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
           # - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]} ADDING GOOGLE TESTIMONIALS
