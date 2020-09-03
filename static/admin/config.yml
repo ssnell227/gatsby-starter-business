@@ -17,6 +17,7 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home-page"}
           # - {label: Title, name: title, widget: string}
           # - {label: Title, name: SecondTitle, widget: string}
+          - {label: Carousel, name: carousel, widget: object, fields: [{label: CarouselImage, name: image, widget: image},{label: CarouselImage, name: image, widget: image}, {label: CarouselImage, name: image, widget: image}]}
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: string}
           - {label: Offerings, name: offerings, widget: object, fields: [{label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
