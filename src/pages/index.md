@@ -1,7 +1,7 @@
 ---
 templateKey: home-page
 title: BLAHAAHBHAHA
-heading: Lorem ipsum dolor sit amet
+heading: Lorem ipsum dolor sit ametasdf
 description: Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
   consectetur, adipisci velit...
 offerings:
