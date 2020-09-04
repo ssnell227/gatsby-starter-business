@@ -43,14 +43,22 @@ whyblock:
       text: Inspections are performed by Ryan Morse-Brady, an InterNACHI Certified
         Professional Inspector, with specialized, hands-on training in all
         aspects of residential home safety and structural design.
-    - text: "Whether you are buying, selling, or monitoring, Fremont County Home
-        Inspection will tell you everything you need to make confident decisions
-        regarding your property transactions. "
-      itemtitle: Expert
     - text: All inspections that we perform offer a close-up look at the structural
         and safety details of a home that may not be apparent at first glance.
       itemtitle: Detail-oriented
   image: /img/unnamed.jpg
+  listitem:
+    - title: Liscensed
+      text: Inspections are performed by Ryan Morse-Brady, an InterNACHI Certified
+        Professional Inspector, with specialized, hands-on training in all
+        aspects of residential home safety and structural design.
+    - title: Expert
+      text: "Whether you are buying, selling, or monitoring, Fremont County Home
+        Inspection will tell you everything you need to make confident decisions
+        regarding your property transactions. "
+    - title: Detail-oriented
+      text: All inspections that we perform offer a close-up look at the structural
+        and safety details of a home that may not be apparent at first glance.
 meta_title: Home | Fremont County Home Inspection
 meta_description: Offering comprehensive, affordable home inspection services
   that are customized to your needs. We serve all areas in Fremont County, WY,
