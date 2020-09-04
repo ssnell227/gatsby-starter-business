@@ -19,7 +19,7 @@ collections:
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: text}
           - {label: Services, name: services, widget: list, fields: [{label: Image, name: image, widget: image}, {label: title, name: title, widget: string}]}
-          - {label: WhyBlock, name: whyblock, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Image, name: image, widget: image}, {label: List, name: list, widget: list, fields: [{label: ItemTitle, name: itemtitle, widget: string}, {label: Text, name: text, widget: text}]}, {label: List, name: list, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Text, name: text, widget: text}]}]}
+          - {label: WhyBlock, name: whyblock, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Image, name: image, widget: image}, {label: List, name: list, widget: list, fields: [{label: ItemTitle, name: itemtitle, widget: string}, {label: Text, name: text, widget: text}]}, {label: ListItem, name: listitem, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Text, name: text, widget: text}]}]}
           - {label: "Meta Title", name: "meta_title", widget: "string"}
           - {label: "Meta Description", name: "meta_description", widget: "text"}
       - file: "src/pages/about/index.md"
