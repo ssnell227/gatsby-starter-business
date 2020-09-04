@@ -43,9 +43,21 @@ query IndexPage($id: String) {
       heading
       description
       carousel {
-        image1
-        image2
-        image3
+        carousel1 {
+          image
+          text
+          title
+        }
+        carousel2 {
+          image
+          text
+          title
+        }
+        carousel3 {
+          image
+          text
+          title
+        }
       }
       whyblock {
         image

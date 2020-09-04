@@ -24,9 +24,9 @@ const HomePageTemplate = ({
         <meta name='description' content={meta_description} />
       </Helmet>
       <section className='section section--gradient'>
-          <div className='container'>
-            <Carousel content={carousel}/>
-          </div>
+        <div className='container'>
+            <Carousel content={carousel} />
+        </div>
       </section>
       <section className='section section--gradient'>
         <div className='container'>

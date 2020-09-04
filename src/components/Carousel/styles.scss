@@ -1,0 +1,20 @@
+.slider {
+    width: 100%;
+    margin: auto;
+    .slider-item {
+        height: 400px;
+        position: relative;
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+    }
+    .slick-prev:hover, .slick-next:hover {
+        background-color: rgba(0,0,0,.1)
+    }
+    .slick-prev:before, .slick-next:before {
+        display: none;
+    }
+}

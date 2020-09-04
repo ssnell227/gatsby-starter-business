@@ -1,5 +1,21 @@
 ---
 templateKey: home-page
+carousel:
+  image1: /img/yaroslav-muzychenko-0x7rt228sgm-unsplash.jpg
+  image2: /img/tools.jpg
+  image3: /img/ryan-wallace-skflpoxg1rq-unsplash.jpg
+  carousel1:
+    title: Carousel title
+    text: This is some carousel text
+    image: /img/yaroslav-muzychenko-0x7rt228sgm-unsplash.jpg
+  carousel2:
+    title: Carousel title 2
+    text: this is some carousel text 2
+    image: /img/tools.jpg
+  carousel3:
+    title: carousel title 3
+    text: This is some carousel text 3
+    image: /img/ryan-wallace-skflpoxg1rq-unsplash.jpg
 heading: Fremont County Home Inspection
 description: Offering comprehensive, affordable home inspection services that
   are customized to your needs.  All services are provided by a certified home
