@@ -4,6 +4,8 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
 import Services from '../Services'
+import InfoBlock from '../InfoBlock'
+import Carousel from '../Carousel'
 
 
 
@@ -21,19 +23,10 @@ const HomePageTemplate = ({
         <title>{meta_title}</title>
         <meta name='description' content={meta_description} />
       </Helmet>
-      <section className='hero is-primary is-bold is-medium'>
-        <div className='hero-body'>
+      <section className='section section--gradient'>
           <div className='container'>
-            <div className='columns'>
-              <div className='column is-10 is-offset-1'>
-                <div className='section'>
-                  {/* Carousel banner */}
-                  <h1>Hello</h1>
-                </div>
-              </div>
-            </div>
+            <Carousel content={carousel}/>
           </div>
-        </div>
       </section>
       <section className='section section--gradient'>
         <div className='container'>
@@ -48,8 +41,6 @@ const HomePageTemplate = ({
                     <p>{description}</p>
                     <Link className='button is-primary' to='/about'>About us</Link>
                   </div>
-                  {/* Services */}
-                  {/* google testimonials */}
                 </div>
               </div>
             </div>
@@ -58,8 +49,14 @@ const HomePageTemplate = ({
       </section>
       <section className='section section--gradient'>
         <div className='container'>
-          <Services services={services}/>
+          <Services services={services} />
         </div>
+      </section>
+      <section className='section section--gradient'>
+        <div className='container'>
+          <InfoBlock content={whyblock} />
+        </div>
+
       </section>
     </div>
   )

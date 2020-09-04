@@ -15,11 +15,11 @@ collections:
         name: "home"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home-page"}
-          - {label: Carousel, name: carousel, widget: object, fields: [{label: CarouselImage1, name: image1, widget: image},{label: CarouselImage2, name: image2, widget: image}, {label: CarouselImage3, name: image3, widget: image}]}
+          - {label: Carousel, name: carousel, widget: object, fields: [{label: Carousel1, name: carousel1, widget: object, fields: [{label: title, name: title, widget: string},{label: image, name: image, widget: image}]},{label: Carousel2, name: carousel2, widget: object, fields: [{label: title, name: title, widget: string},{label: image, name: image, widget: image}]},{label: Carousel3, name: carousel3, widget: object, fields: [{label: title, name: title, widget: string},{label: image, name: image, widget: image}]}]}
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: text}
           - {label: Services, name: services, widget: list, fields: [{label: Image, name: image, widget: image}, {label: title, name: title, widget: string}]}
-          - {label: WhyBlock, name: whyblock, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Image, name: image, widget: image}, {label: List, name: list, widget: list, fields: [{label: ItemTitle, name: itemtitle, widget: string}, {label: Text, name: text, widget: text}]}, {label: ListItem, name: listitem, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Text, name: text, widget: text}]}]}
+          - {label: WhyBlock, name: whyblock, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Image, name: image, widget: image}, {label: ListItem, name: listitem, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Text, name: text, widget: text}]}]}
           - {label: "Meta Title", name: "meta_title", widget: "string"}
           - {label: "Meta Description", name: "meta_description", widget: "text"}
       - file: "src/pages/about/index.md"

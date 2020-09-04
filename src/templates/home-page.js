@@ -5,8 +5,8 @@ import HomePageTemplate from '../components/HomePageTemplate'
 import Layout from '../components/Layout'
 
 const HomePage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
   console.log(data)
+  const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
@@ -48,11 +48,11 @@ query IndexPage($id: String) {
         image3
       }
       whyblock {
+        image
         title
-        whyimage
-        whylist {
+        listitem {
           text
-          whyitemtitle
+          title
         }
       }
       services {
