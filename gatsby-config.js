@@ -205,12 +205,6 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: `gatsby-source-google-reviews`,
-      options: {
-        placeId: `ChIJ23RPbQQBWYcRlPpnjKV_NEw`,
-      },
-    },
     `gatsby-plugin-netlify`,
   ],
 }
