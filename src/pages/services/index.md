@@ -1,4 +1,5 @@
 ---
+templateKey: services-page
 title: What is a home inspection?
 subtitle: Other Services
 meta_title: Services
