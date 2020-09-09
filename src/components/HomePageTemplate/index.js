@@ -68,7 +68,8 @@ HomePageTemplate.propTypes = {
   description: PropTypes.string,
   testimonials: PropTypes.array,
   carousel: PropTypes.object,
-  whyblock: PropTypes.object
+  whyblock: PropTypes.object,
+  services: PropTypes.object
 }
 
 export default HomePageTemplate
