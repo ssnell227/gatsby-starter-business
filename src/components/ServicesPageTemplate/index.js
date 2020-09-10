@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import './styles.scss'
 
 import InfoBlock from '../InfoBlock'
 
@@ -82,15 +83,35 @@ const ServicesPageTemplate = ({
                 </div>
             </section>
             <section>
-            <h1 className='title is-1 has-text-centered'>{pricingBlock.title}</h1>
+                <h1 className='title is-1 has-text-centered'>{pricingBlock.title}</h1>
                 <div className='columns'>
                     <div className='column'>
-                        {/* <h1 className='title is-3 has-text-centered'>{pricingBlock.listitem[0].title}</h1>
-                        <p>{pricingBlock.listitem[0].text}</p> */}
+                    <div className='section'>
+                        <div className='card pricing-card'>
+                            <h1 className='title is-3 has-text-centered'>{pricingBlock.homeInspectionPricing.title}</h1>
+                            <div className='card-content'>
+                                {pricingBlock.homeInspectionPricing.pricing.map((pricingItem, index) => (
+                                    <div className='pricing-item' key={`homeInspectionPricing-${index}`}>
+                                        <p><strong>{pricingItem.text}</strong>: {pricingItem.price}</p>
+                                    </div>
+                                ))}
+                            </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className='column'>
-                        {/* <h1 className='title is-3 has-text-centered'>{pricingBlock.listitem[1].title}</h1>
-                        <p>{pricingBlock.listitem[1].text}</p> */}
+                    <div className='column '>
+                        <div className='section'>
+                            <div className='card pricing-card'>
+                                <h1 className='title is-3 has-text-centered'>{pricingBlock.additionalPricing.title}</h1>
+                                <div className='card-content'>
+                                    {pricingBlock.additionalPricing.pricing.map((pricingItem, index) => (
+                                        <div className='pricing-item' key={`homeInspectionPricing-${index}`}>
+                                            <p><strong>{pricingItem.item}</strong>: {pricingItem.price}</p>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 {/* Working on adding pricing items as a list, just added a new object to the pricing config, gotta check whether it works in the CMS.  Then gotta delete the extra stuff */}

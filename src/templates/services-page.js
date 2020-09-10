@@ -74,21 +74,21 @@ export const servicesPageQuery = graphql`
           }
         }
         pricingBlock {
-          title
-          RegionalPrice {
-            pricing {
-              item
-              price
-            }
-            title
-          }
-          localPrice {
+          homeInspectionPricing {
             pricing {
               price
               text
             }
             title
           }
+          additionalPricing {
+            pricing {
+              item
+              price
+            }
+            title
+          }
+          title
         }
       }
     }
