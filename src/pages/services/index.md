@@ -55,5 +55,31 @@ pricingBlock:
   title: Pricing
   listitem:
     - title: Home Inspection
-    - title: Other Services  
+    - title: Other Services
+  localPrice:
+    pricing:
+      - text: Up to 3000 Square Feet
+        price: $275
+      - text: 3000 to 5000 Square Feet
+        price: $500
+      - text: Greater than 5000 Square Feet
+        price: Contact us for a quote
+      - text: Extra Residential Dwelling
+        price: $200 in addition to cost of primary dwelling inspection
+    title: Home Inspection Pricing
+  RegionalPrice:
+    title: Additional Service Pricing
+    pricing:
+      - item: Asbestos Inspection
+        price: Contact us for a quote
+      - item: Lead Testing
+        price: $50 (includes 3 spot tests)
+      - item: Radon Testing
+        price: $125
+      - item: Well Water Testing (FHA/VA Loan Compliant
+        price: $250
+      - item: Well Water Testing (Detailed Water Analysis)
+        price: $300
+      - item: Well Water Testing (Detailed Water Analysis with Bacteria Testing)
+        price: $350
 ---
