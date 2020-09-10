@@ -14,17 +14,23 @@ const InfoBlock = ({ content }) => (
           <h2>{content.title}</h2>
           <ul>
             <li>
-              <h3>{content.listitem[0].title}</h3>
+              {content.listitem[0].title &&
+                <h3>{content.listitem[0].title}</h3>
+              }
               <p>{content.listitem[0].text}</p>
             </li>
+            {content.listitem[1] && 
             <li>
               <h3>{content.listitem[1].title}</h3>
               <p>{content.listitem[1].text}</p>
             </li>
+            }
+            {content.listitem[1] && 
             <li>
               <h3>{content.listitem[2].title}</h3>
               <p>{content.listitem[2].text}</p>
             </li>
+            }
           </ul>
         </div>
       </div>

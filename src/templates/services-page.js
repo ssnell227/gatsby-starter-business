@@ -43,23 +43,32 @@ export const servicesPageQuery = graphql`
           text
           title
         }
+        asbesdosBlock {
+          listitem {
+            text
+          }
+          image
+          title
+        }
         leadBlock {
           image
           title
+          listitem {
+            text
+          }
         }
         radonBlock {
           image
           title
+          listitem {
+            text
+          }
         }
         wellWaterBlock {
           image
           title
-        }
-        pricingBlock {
-          title
           listitem {
             text
-            title
           }
         }
       }
