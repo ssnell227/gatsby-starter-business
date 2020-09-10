@@ -65,12 +65,12 @@ collections:
           - {label: "Lead Block", name: leadBlock, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Image, name: image, widget: image}, {label: ListItem, name: listitem, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Text, name: text, widget: text}]}]}
           - {label: "Radon Block", name: radonBlock, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Image, name: image, widget: image}, {label: ListItem, name: listitem, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Text, name: text, widget: text}]}]}
           - {label: "Well Water Block", name: wellWaterBlock, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Image, name: image, widget: image}, {label: ListItem, name: listitem, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Text, name: text, widget: text}]}]}
-          - {label: "Pricing Block", name: pricingBlock, widget: object, fields: [{label: Title, name: title, widget: string}, {label: LocalPrice, name: localPrice, widget: object, fields: [{label: title, name: title, widget: title}, {label: pricing, name: pricing, widget: list, fields: [{label: text, name: text, widget: text}]}]}, {label: ListItem, name: listitem, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Text, name: text, widget: text}]}]}
+          - {label: "Pricing Block", name: pricingBlock, widget: object, fields: [{label: Title, name: title, widget: string}, {label: LocalPrice, name: localPrice, widget: object, fields: [{label: title, name: title, widget: title}, {label: pricing, name: pricing, widget: list, fields: [{label: text, name: text, widget: text}]}]}, {label: RegionalPrice, name: RegionalPrice, widget: object, fields: [{label: title, name: title, widget: title}, {label: pricing, name: pricing, widget: list, fields: [{label: text, name: text, widget: text}]}]} {label: ListItem, name: listitem, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Text, name: text, widget: text}]}]}
       - file: "src/pages/regions/index.md"
         label: "Regions Page"
         name: "regions"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "services-page"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "regions-page"}
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
           - {label: "Meta Title", name: "meta_title", widget: "string"}
