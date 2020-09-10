@@ -93,6 +93,7 @@ const ServicesPageTemplate = ({
                         <p>{pricingBlock.listitem[1].text}</p>
                     </div>
                 </div>
+                {/* Working on adding pricing items as a list, just added a new object to the pricing config, gotta check whether it works in the CMS.  Then gotta delete the extra stuff */}
             </section>
         </div>
     )
