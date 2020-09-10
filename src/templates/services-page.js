@@ -75,8 +75,18 @@ export const servicesPageQuery = graphql`
         }
         pricingBlock {
           title
-          listitem {
-            text
+          RegionalPrice {
+            pricing {
+              item
+              price
+            }
+            title
+          }
+          localPrice {
+            pricing {
+              price
+              text
+            }
             title
           }
         }

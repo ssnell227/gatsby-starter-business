@@ -85,12 +85,12 @@ const ServicesPageTemplate = ({
             <h1 className='title is-1 has-text-centered'>{pricingBlock.title}</h1>
                 <div className='columns'>
                     <div className='column'>
-                        <h1 className='title is-3 has-text-centered'>{pricingBlock.listitem[0].title}</h1>
-                        <p>{pricingBlock.listitem[0].text}</p>
+                        {/* <h1 className='title is-3 has-text-centered'>{pricingBlock.listitem[0].title}</h1>
+                        <p>{pricingBlock.listitem[0].text}</p> */}
                     </div>
                     <div className='column'>
-                        <h1 className='title is-3 has-text-centered'>{pricingBlock.listitem[1].title}</h1>
-                        <p>{pricingBlock.listitem[1].text}</p>
+                        {/* <h1 className='title is-3 has-text-centered'>{pricingBlock.listitem[1].title}</h1>
+                        <p>{pricingBlock.listitem[1].text}</p> */}
                     </div>
                 </div>
                 {/* Working on adding pricing items as a list, just added a new object to the pricing config, gotta check whether it works in the CMS.  Then gotta delete the extra stuff */}
