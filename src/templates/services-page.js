@@ -11,6 +11,7 @@ const ServicesPage = ({ data}) => {
             <ServicesPageTemplate
             title={frontmatter.title}
             subtitle={frontmatter.subtitle}
+            subtitleTop={frontmatter.subtitleTop}
             meta_title={frontmatter.meta_title}
             meta_description={frontmatter.meta_description}
             asbesdosBlock={frontmatter.asbesdosBlock}
@@ -31,6 +32,7 @@ export const servicesPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
+        subtitleTop
         subtitle
         meta_title
         meta_description
@@ -69,6 +71,13 @@ export const servicesPageQuery = graphql`
           title
           listitem {
             text
+          }
+        }
+        pricingBlock {
+          title
+          listitem {
+            text
+            title
           }
         }
       }

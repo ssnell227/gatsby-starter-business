@@ -5,6 +5,7 @@ import InfoBlock from '../InfoBlock'
 
 const ServicesPageTemplate = ({
     title,
+    subtitleTop,
     subtitle,
     meta_title,
     meta_description,
@@ -16,7 +17,7 @@ const ServicesPageTemplate = ({
     pricingBlock
 
 }) => {
-    console.log(asbesdosBlock)
+    console.log(pricingBlock)
     return (
         <div>
             <Helmet>
@@ -24,7 +25,8 @@ const ServicesPageTemplate = ({
                 <meta name='description' content={meta_description} />
             </Helmet>
             <section className='section section--gradient'>
-            <h1 className='title is-1 has-text-centered'>{title}</h1>
+                <h1 className='title is-1 has-text-centered'>{title}</h1>
+                <h3 className='subtitle has-text-centered'>{subtitleTop}</h3>
                 <div className='columns'>
                     <div className='column '>
                         <figure className='image is-square'>
@@ -49,11 +51,11 @@ const ServicesPageTemplate = ({
                     </div>
                 </div>
                 <div className='level is-mobile'>
-                    <div className='level-item'/>
-                        <button className='button is-large level-item'>Pricing</button>
-                        <div className='level-item'/>
-                        <button className='button is-large level-item'>Book Now</button>
-                        <div className='level-item'/>
+                    <div className='level-item' />
+                    <button className='button is-large level-item'>Pricing</button>
+                    <div className='level-item' />
+                    <button className='button is-large level-item'>Book Now</button>
+                    <div className='level-item' />
                 </div>
             </section>
             <section className='section section--gradient'>
@@ -79,7 +81,19 @@ const ServicesPageTemplate = ({
                     <InfoBlock content={wellWaterBlock} />
                 </div>
             </section>
-
+            <section>
+            <h1 className='title is-1 has-text-centered'>{pricingBlock.title}</h1>
+                <div className='columns'>
+                    <div className='column'>
+                        <h1 className='title is-3 has-text-centered'>{pricingBlock.listitem[0].title}</h1>
+                        <p>{pricingBlock.listitem[0].text}</p>
+                    </div>
+                    <div className='column'>
+                        <h1 className='title is-3 has-text-centered'>{pricingBlock.listitem[1].title}</h1>
+                        <p>{pricingBlock.listitem[1].text}</p>
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }
