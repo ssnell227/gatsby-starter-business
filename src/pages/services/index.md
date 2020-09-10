@@ -1,6 +1,8 @@
 ---
 templateKey: services-page
 title: What is a home inspection?
+subtitleTop: Our residential home inspections consist of a comprehensive, "top
+  to bottom," analysis of property conditions.
 subtitle: Other Services
 meta_title: Services
 meta_description: Meta description
@@ -82,7 +84,7 @@ pricingBlock:
       - item: Well Water Testing (Detailed Water Analysis with Bacteria Testing)
         price: $350
   homeInspectionPricing:
-    title: "Home Inspection Pricing "
+    title: Home Inspections
     pricing:
       - text: Up to 3000 Square Feet
         price: $275
@@ -93,7 +95,7 @@ pricingBlock:
       - text: Extra Residential Dwelling
         price: $200 in addition to cost of primary dwelling inspection
   additionalPricing:
-    title: Additional Service Pricing
+    title: Additional Services
     pricing:
       - item: Asbestos Inspection
         price: Contact us for a quote
@@ -107,6 +109,4 @@ pricingBlock:
         price: $300
       - item: Well Water Testing (Detailed Water Analysis with Bacteria Testing)
         price: $350
-subtitleTop: Our residential home inspections consist of a comprehensive, "top
-  to bottom," analysis of property conditions.
 ---
