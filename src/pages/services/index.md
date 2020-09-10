@@ -1,5 +1,7 @@
 ---
 title: What is a home inspection?
+subtitleTop: Our residential home inspections consist of a comprehensive, "top
+  to bottom," analysis of property conditions.
 subtitle: Other Services
 meta_title: Services
 meta_description: Meta description
