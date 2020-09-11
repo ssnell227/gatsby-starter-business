@@ -16,9 +16,7 @@ const AboutPage = ({ data }) => {
         <meta name='description' content={post.frontmatter.meta_description} />
       </Helmet>
       <AboutPageTemplate
-        contentComponent={HTMLContent}
         title={post.frontmatter.title}
-        content={post.html}
       />
     </Layout>
   )
@@ -33,7 +31,6 @@ export default AboutPage
 export const aboutPageQuery = graphql`
   query AboutPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
-      html
       frontmatter {
         title
         meta_title
