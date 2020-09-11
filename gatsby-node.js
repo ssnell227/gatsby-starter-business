@@ -8,7 +8,7 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
     {
-      allMarkdownRemark(limit: 1000, sort: { order: DESC, fields: [frontmatter___date] }) {
+      allMarkdownRemark(limit: 1000) {
         edges {
           node {
             excerpt(pruneLength: 400)
@@ -18,10 +18,7 @@ exports.createPages = ({ actions, graphql }) => {
             }
             frontmatter {
               title
-              cover
-              tags
               templateKey
-              date(formatString: "MMMM DD, YYYY")
             }
           }
         }
