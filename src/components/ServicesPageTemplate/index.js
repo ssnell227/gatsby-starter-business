@@ -87,7 +87,7 @@ const ServicesPageTemplate = ({
                 <div className='columns'>
                     <div className='column'>
                     <div className='section'>
-                        <div className='card pricing-card'>
+                        <div className=' pricing-card'>
                             <h1 className='title is-3 has-text-centered'>{pricingBlock.homeInspectionPricing.title}</h1>
                             <div className='card-content'>
                                 {pricingBlock.homeInspectionPricing.pricing.map((pricingItem, index) => (
@@ -101,7 +101,7 @@ const ServicesPageTemplate = ({
                     </div>
                     <div className='column '>
                         <div className='section'>
-                            <div className='card pricing-card'>
+                            <div className='pricing-card'>
                                 <h1 className='title is-3 has-text-centered'>{pricingBlock.additionalPricing.title}</h1>
                                 <div className='card-content'>
                                     {pricingBlock.additionalPricing.pricing.map((pricingItem, index) => (
@@ -114,7 +114,6 @@ const ServicesPageTemplate = ({
                         </div>
                     </div>
                 </div>
-                {/* Working on adding pricing items as a list, just added a new object to the pricing config, gotta check whether it works in the CMS.  Then gotta delete the extra stuff */}
             </section>
         </div>
     )

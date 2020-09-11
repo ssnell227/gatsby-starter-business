@@ -54,7 +54,7 @@ const HomePageTemplate = ({
       </section>
       <section className='section section--gradient'>
         <div className='container'>
-          <InfoBlock content={whyblock} />
+          <InfoBlock content={whyblock} imgSize='large' />
         </div>
 
       </section>
