@@ -24,4 +24,52 @@ regionsList:
       areaName: Lander
       state: WY
       zipCode: 82520
+  - region:
+      areaName: Atlantic City
+      state: WY
+      zipCode: 82520
+  - region:
+      areaName: Crowheart
+      state: WY
+      zipCode: 82512
+  - region:
+      areaName: Dubois
+      state: WY
+      zipCode: 82513
+  - region:
+      areaName: Ethete
+      state: WY
+      zipCode: 82510
+  - region:
+      areaName: Farson
+      state: WY
+      zipCode: 82932
+  - region:
+      areaName: Fort Washakie
+      state: WY
+      zipCode: 82514
+  - region:
+      areaName: Riverton
+      state: WY
+      zipCode: 82501
+  - region:
+      areaName: Hudson
+      state: WY
+      zipCode: 82515
+  - region:
+      areaName: Kinnear
+      state: WY
+      zipCode: 82516
+  - region:
+      areaName: Pavillion
+      state: WY
+      zipCode: 82523
+  - region:
+      areaName: Lysite
+      state: WY
+      zipCode: 82642
+  - region:
+      areaName: Shoshoni
+      state: WY
+      zipCode: 82649
 ---
