@@ -66,6 +66,16 @@ collections:
           - {label: "Radon Block", name: radonBlock, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Image, name: image, widget: image}, {label: ListItem, name: listitem, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Text, name: text, widget: text}]}]}
           - {label: "Well Water Block", name: wellWaterBlock, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Image, name: image, widget: image}, {label: ListItem, name: listitem, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Text, name: text, widget: text}]}]}
           - {label: "Pricing Block", name: pricingBlock, widget: object, fields: [{label: Title, name: title, widget: string}, {label: HomeInspectionPricing, name: homeInspectionPricing, widget: object, fields: [{label: title, name: title, widget: string}, {label: pricing, name: pricing, widget: list, fields: [{label: text, name: text, widget: text}, {label: price, name: price, widget: string}]}]}, {label: AdditionalPricing, name: additionalPricing, widget: object, fields: [{label: title, name: title, widget: string}, {label: pricing, name: pricing, widget: list, fields: [{label: item, name: item, widget: text}, {label: price, name: price, widget: string}]}]}]}
+      - file: "src/pages/regions/index.md"
+        label: "Regions Page"
+        name: "regions"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "regions-page"}
+          - {label: "Meta Title", name: "meta_title", widget: "string"}
+          - {label: "Meta Description", name: "meta_description", widget: "text"}
+          - {label: Title, name: title, widget: string}
+          - {label: "Regions Served", name: regionsServed, widget: object, fields: [{label: Title, name: title, widget: string}, {label: regionType, name: regionType, widget: list, fields:[{label: blurb, name: blurb, widget: text}]}]}
+          -{label: regionsList, name: regionsList, widget: list, fields: [{label: region, name: region, widget: object, fields: [{label: areaName, name: areaName, widget: string}, {label: State, name: state, widget: string} {label: zipCode, name: zipCode, widget: number}]}]}
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
