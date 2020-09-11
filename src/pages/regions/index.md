@@ -86,4 +86,52 @@ regionsList:
       state: WY
       zipCode: 82649
       county: Fremont
+  - region:
+      areaName: Casper
+      county: Natrona
+      zipCode: 82597
+  - region:
+      areaName: Casper
+      county: Natrona
+      zipCode: 82604
+  - region:
+      areaName: Casper
+      county: Natrona
+      zipCode: 82609
+  - region:
+      areaName: Cody
+      county: Park
+      zipCode: 82414
+  - region:
+      areaName: Green River
+      county: Sweetwater
+      zipCode: 82935
+  - region:
+      areaName: Jackson
+      county: Teton
+      zipCode: 83001
+  - region:
+      areaName: Kemmerer
+      county: Lincoln
+      zipCode: 83101
+  - region:
+      areaName: Pinedale
+      county: Sublette
+      zipCode: 82941
+  - region:
+      areaName: Rock Springs
+      county: Sweetwater
+      zipCode: 82901
+  - region:
+      areaName: Rawlins
+      county: Carbon
+      zipCode: 82301
+  - region:
+      areaName: Thermopolis
+      county: Hot Springs
+      zipCode: 82442
+  - region:
+      areaName: Worland
+      county: Washakie
+      zipCode: 82401
 ---
