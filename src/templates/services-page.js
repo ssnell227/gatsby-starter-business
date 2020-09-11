@@ -5,7 +5,6 @@ import {graphql} from 'gatsby'
 
 const ServicesPage = ({ data}) => {
     const { frontmatter } = data.markdownRemark
-    console.log(data)
     return (
         <Layout>
             <ServicesPageTemplate
