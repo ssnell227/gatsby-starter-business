@@ -3,7 +3,6 @@ import Content from '../Content'
 import PropTypes from 'prop-types'
 
 const AboutPageTemplate = ({ title }) => {
-  const PageContent = contentComponent || Content
 
   return (
     <div>
