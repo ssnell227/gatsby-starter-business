@@ -7,7 +7,7 @@ import AboutPageTemplate from '../components/AboutPageTemplate'
 import Layout from '../components/Layout'
 
 const AboutPage = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post } = data 
 
   return (
     <Layout>
