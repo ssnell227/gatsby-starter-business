@@ -74,7 +74,7 @@ collections:
           - {label: "Meta Title", name: "meta_title", widget: "string"}
           - {label: "Meta Description", name: "meta_description", widget: "text"}
           - {label: Title, name: title, widget: string}
-          - {label: "Regions Served", name: regionsServed, widget: object, fields: [{label: Title, name: title, widget: string}, {label: regionType, name: regionType, widget: list, fields:[{label: blurb, name: blurb, widget: text}]}]}
+          - {label: "Regions Served", name: regionsServed, widget: object, fields: [{label: Title, name: title, widget: string}, {label: regionType, name: regionType, widget: list, fields: [{label: blurb, name: blurb, widget: text}]}]}
           - {label: regionsList, name: regionsList, widget: list, fields: [{label: region, name: region, widget: object, fields: [{label: areaName, name: areaName, widget: string}, {label: State, name: state, widget: string}, {label: zipCode, name: zipCode, widget: number}]}]}
   - name: "blog"
     label: "Blog"
