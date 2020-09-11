@@ -22,6 +22,22 @@ const RegionsPageTemplate = ({ metaTitle, metaDescription, title, regionsServed,
                                 <h1 className='title is-3 has-text-centered'>{item.title}</h1>
                                 <div className='card-content'>
                                     <p>{item.blurb}</p>
+                                    <ul>
+                                        {item.title === 'Fremont County' ? 
+                                        regionsList.filter(regionItem => regionItem.region.county === 'Fremont').map((regionItem, index) => {
+                                            return <li key={`city-${index}`}>
+                                                {regionItem.region.areaName}
+                                            </li>
+                                        }) :
+                                        [...new Set(regionsList.filter(regionItem => regionItem.region.county !== 'Fremont')
+                                        .flatMap(item => item.region.areaName))]
+                                        .map((regionItem, index) => (
+                                            <li key={`city-${index}`}>
+                                                {regionItem}
+                                            </li>
+                                        ))
+                                        }
+                                    </ul>
                                 </div>
                             </div>
                         </div>

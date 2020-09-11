@@ -39,7 +39,7 @@ query RegionsPage($id: String) {
         regionsList {
           region {
             areaName
-            state
+            county
             zipCode
           }
         }
