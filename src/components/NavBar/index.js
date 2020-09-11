@@ -31,14 +31,14 @@ const NavBar = ({ toggleNavbar, isActive }) => (
 
           <div className='navbar-end'>
             <SearchBox searchIndex={data.siteSearchIndex.index} />
-            <Link className='navbar-item' to='/about'>
-                            About
-            </Link>
             <Link className='navbar-item' to='/services'>
                             Services
             </Link>
             <Link className='navbar-item' to='/regions'>
                             Regions
+            </Link>
+            <Link className='navbar-item' to='/about'>
+                            About
             </Link>
             <div className='navbar-item'>
               <div className='field is-grouped'>

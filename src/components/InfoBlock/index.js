@@ -16,7 +16,7 @@ const InfoBlock = ({ content, imgSize }) => (
           <h2>{content.title}</h2>
           <ul>
             {content.listitem.map((item, index) => (
-              <li>
+              <li key={`info-item-${index}`}>
                 {item.title && <h3>{item.title}</h3>}
                 <p>{item.text}</p>
               </li>

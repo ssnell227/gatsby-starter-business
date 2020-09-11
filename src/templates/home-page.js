@@ -74,6 +74,4 @@ query IndexPage($id: String) {
     }
   }
 }
-
-
 `
