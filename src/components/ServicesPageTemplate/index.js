@@ -20,13 +20,19 @@ const ServicesPageTemplate = ({
 }) => {
     console.log(pricingBlock)
     return (
-        <div>
+        <div className='container'>
             <Helmet>
                 <title >{meta_title}</title>
                 <meta name='description' content={meta_description} />
             </Helmet>
+            <section class="hero services-hero" >
+                <div class="hero-body">
+                    <div class="container box about-title">
+                        <h1 className='title is-1 has-text-centered '>{title}</h1>
+                    </div>
+                </div>
+            </section>
             <section className='section section--gradient'>
-                <h1 className='title is-1 has-text-centered'>{title}</h1>
                 <h3 className='subtitle has-text-centered'>{subtitleTop}</h3>
                 <div className='columns'>
                     <div className='column '>
@@ -86,16 +92,16 @@ const ServicesPageTemplate = ({
                 <h1 className='title is-1 has-text-centered'>{pricingBlock.title}</h1>
                 <div className='columns'>
                     <div className='column'>
-                    <div className='section'>
-                        <div className=' pricing-card'>
-                            <h1 className='title is-3 has-text-centered'>{pricingBlock.homeInspectionPricing.title}</h1>
-                            <div className='card-content'>
-                                {pricingBlock.homeInspectionPricing.pricing.map((pricingItem, index) => (
-                                    <div className='pricing-item' key={`homeInspectionPricing-${index}`}>
-                                        <p><strong>{pricingItem.text}</strong>: {pricingItem.price}</p>
-                                    </div>
-                                ))}
-                            </div>
+                        <div className='section'>
+                            <div className=' pricing-card'>
+                                <h1 className='title is-3 has-text-centered'>{pricingBlock.homeInspectionPricing.title}</h1>
+                                <div className='card-content'>
+                                    {pricingBlock.homeInspectionPricing.pricing.map((pricingItem, index) => (
+                                        <div className='pricing-item' key={`homeInspectionPricing-${index}`}>
+                                            <p><strong>{pricingItem.text}</strong>: {pricingItem.price}</p>
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>

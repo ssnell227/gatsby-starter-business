@@ -31,7 +31,6 @@ exports.createPages = ({ actions, graphql }) => {
     }
 
     const postsAndPages = result.data.allMarkdownRemark.edges
-    postsAndPages.forEach(item => console.log(item.node.frontmatter))
 
     // Post pages:
     let posts = []

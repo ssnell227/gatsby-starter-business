@@ -1,5 +1,34 @@
-.large-icon {
-    & svg {
-        font-size: 100px;
+.about-hero {
+    position: relative;
+    padding: 30px;
+    margin: 30px;
+
+    background-image: url('/img/ryanphotofam.jpg');
+    background-position: center;
+    .about-title {
+        color: white;
+        position: absolute;
+        left: 50%;
     }
+
+}
+
+.about-block-container {
+    min-height: 690px;
+    .large-icon {
+        & svg {
+            font-size: 100px;
+            margin: auto;
+        }
+    }
+    .about-block-titles {
+        min-height: 148px;
+    }
+
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
