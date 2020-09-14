@@ -3,27 +3,18 @@ import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { ContactForm } from '../forms'
 
+import './styles.scss'
+
 const ContactPageTemplate = ({ title, subtitle, meta_title, meta_description }) => {
   return <div>
     <Helmet>
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
-    <section className='hero is-primary is-bold is-medium'>
-      <div className='hero-body'>
-        <div className='container'>
-          <div className='columns'>
-            <div className='column is-10 is-offset-1'>
-              <div className='section'>
-                <h1 className='title'>
-                  {title}
-                </h1>
-                <h2 className='subtitle'>
-                  {subtitle}
-                </h2>
-              </div>
-            </div>
-          </div>
+    <section class="hero contact-hero" >
+      <div class="hero-body">
+        <div class="container box contact-title">
+          <h1 className='title is-1 is-size-2-tablet is-size-3-mobile has-text-centered '>{title}</h1>
         </div>
       </div>
     </section>

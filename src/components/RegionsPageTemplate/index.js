@@ -10,7 +10,7 @@ const RegionsPageTemplate = ({ metaTitle, metaDescription, title, regionsServed,
         </Helmet>
         <section class="hero regions-hero" >
             <div class="hero-body">
-                <div class="container box about-title">
+                <div class="container box regions-title">
                     <h1 className='title is-size-1-desktop is-size-3-tablet is-size-4-mobile has-text-centered '>{title}</h1>
                 </div>
             </div>
