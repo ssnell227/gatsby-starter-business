@@ -6,19 +6,19 @@ import ClearIcon from '@material-ui/icons/Clear';
 
 import './styles.scss'
 
-const RegionSearch = ({regionsList}) => {
+const RegionSearch = ({ regionsList }) => {
     const [input, setInput] = useState('')
     const [included, setIncluded] = useState(false)
 
     const checkInput = (e) => {
         setInput(e.target.value)
+        
     }
 
     useEffect(() => {
-        console.log(regionsList[0].region.zipCode)
-        console.log(Number(input))
-        regionsList.includes(item => Number(item.region.zipCode) === Number(input)) ? setIncluded(true) : setIncluded(false)
-        
+        if (input.length === 5) {
+            regionsList.findIndex(item => Number(item.region.zipCode) === Number(input)) !== -1 ? setIncluded(true) : setIncluded(false)
+        }
     }, [input])
 
     return (
@@ -28,26 +28,26 @@ const RegionSearch = ({regionsList}) => {
             </div>
             <div className="field box">
                 <div className="control has-icons-left has-icons-right">
-                    <input onChange={(e) => checkInput(e)} className={`input ${input && included ? 'is-success' : input && !included ? 'is-danger' : 'input'}`} type="text" placeholder="Text input" value={input} />
+                    <input onChange={(e) => checkInput(e)} className={`input ${input.length === 5 && included ? 'is-success' : input.length === 5 && !included ? 'is-danger' : 'input'}`} type="number"  placeholder="Zipcode" value={input} />
                     <span className="icon is-small is-left">
                         <SearchIcon />
                     </span>
-                    {input && included ?
+                    {input.length === 5 && included ?
                         <span className="icon is-small is-right">
-                            <CheckIcon/>
+                            <CheckIcon />
                         </span>
                         : input && !included ?
-                        <span className="icon is-small is-right is-danger input-x">
-                            <ClearIcon/>
-                        </span>
-                        : null
+                            <span className="icon is-small is-right is-danger input-x">
+                                <ClearIcon />
+                            </span>
+                            : null
                     }
                 </div>
-                {input && included ?
+                {input.length === 5 && included ?
                     <p className="help is-success">We serve your area!</p>
-                    : input && !included ?
-                    <p className="help is-danger">Contact us about services for your region.</p>
-                    : null
+                    : input.length === 5 && !included ?
+                        <p className="help is-danger">Contact us about services for your region.</p>
+                        : null
 
                 }
             </div>
