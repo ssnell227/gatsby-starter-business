@@ -2,6 +2,7 @@ import React from 'react'
 import Content from '../Content'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import {Link} from 'gatsby'
 
 import './styles.scss'
 
@@ -64,8 +65,8 @@ const AboutPageTemplate = ({ title, aboutBlockItem, aboutImage, meta_title, meta
             </figure>
           </div> */}
             <div className='column buttons-container'>
-              <button className='button is-large'>Contact</button>
-              <button className='button is-large'>Book Now</button>
+              <Link to='/contact' className='button is-large'>Contact</Link>
+              <a href='https://schedule-a-home-inspection-uub7y.appointlet.com' target='__blank' className='button is-large'>Book Now</a>
             </div>
           </div>
         </section>

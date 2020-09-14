@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import {Link} from 'gatsby'
 import './styles.scss'
 
 import InfoBlock from '../InfoBlock'
@@ -59,36 +60,36 @@ const ServicesPageTemplate = ({
                     </div>
                     <div className='level is-mobile'>
                         <div className='level-item ' />
-                        <button className='button is-large level-item'>Pricing</button>
+                        <Link to='/services#pricing' className='button is-large level-item'>Pricing</Link>
                         <div className='level-item' />
-                        <button className='button is-large level-item'>Book Now</button>
+                        <a target='__blank' href='https://schedule-a-home-inspection-uub7y.appointlet.com/' className='button is-large level-item'>Book Now</a>
                         <div className='level-item' />
                     </div>
                 </section>
-                <section className='section section--gradient'>
                     <div className='content'>
                         <h2 className='title is-1 has-text-centered'>Other Services</h2>
                     </div>
-                    <div className='container'>
+                <section className='section section--gradient' id='asbesdos'>
+                    <div className='container' >
                         <InfoBlock content={asbesdosBlock} />
                     </div>
                 </section>
-                <section className='section section--gradient'>
+                <section className='section section--gradient' id='lead'>
                     <div className='container'>
                         <InfoBlock content={leadBlock} />
                     </div>
                 </section>
-                <section className='section section--gradient'>
+                <section className='section section--gradient' id='radon'>
                     <div className='container'>
                         <InfoBlock content={radonBlock} />
                     </div>
                 </section>
-                <section className='section section--gradient'>
+                <section className='section section--gradient' id='water'>
                     <div className='container'>
                         <InfoBlock content={wellWaterBlock} />
                     </div>
                 </section>
-                <section>
+                <section className='section section--gradient' id='pricing'>
                     <h1 className='title is-1 has-text-centered'>{pricingBlock.title}</h1>
                     <div className='columns'>
                         <div className='column'>
