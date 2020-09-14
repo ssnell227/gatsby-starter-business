@@ -2,23 +2,25 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import './styles.scss'
 
+import RegionSearch from '../RegionSearch'
+
 const RegionsPageTemplate = ({ metaTitle, metaDescription, title, regionsServed, regionsList }) => (
     <div>
         <Helmet>
             <title >{metaTitle}</title>
             <meta name='description' content={metaDescription} />
         </Helmet>
-        <section class="hero regions-hero" >
-            <div class="hero-body">
-                <div class="container box regions-title">
+        <section className="hero regions-hero" >
+            <div className="hero-body">
+                <div className="container box regions-title">
                     <h1 className='title is-size-1-desktop is-size-3-tablet is-size-4-mobile has-text-centered '>{title}</h1>
                 </div>
             </div>
         </section>
-        <section className='section section--gradient'>
-            {/* zipcode search goes here */}
-        </section>
         <div className='container'>
+            <section className='section section--gradient'>
+                <RegionSearch regionsList={regionsList} />
+            </section>
             <section>
                 <h1 className='title is-1 has-text-centered'>{regionsServed.title}</h1>
                 <div className='columns'>
@@ -26,7 +28,7 @@ const RegionsPageTemplate = ({ metaTitle, metaDescription, title, regionsServed,
                         <div key={`region-${index}`} className='column'>
                             <div className='section'>
                                 <div className=' region-card'>
-                                    <h1 className='title is-3 has-text-centered'>{item.title}</h1>
+                                    <h2 className='title is-3 has-text-centered'>{item.title}</h2>
                                     <div className='card-content'>
                                         <p>{item.blurb}</p>
                                         <ul>
