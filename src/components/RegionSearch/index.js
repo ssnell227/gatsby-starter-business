@@ -11,8 +11,9 @@ const RegionSearch = ({ regionsList }) => {
     const [included, setIncluded] = useState(false)
 
     const checkInput = (e) => {
-        setInput(e.target.value)
-        
+        if (e.target.value.length < 6) {
+            setInput(e.target.value)
+        }
     }
 
     useEffect(() => {
@@ -26,9 +27,10 @@ const RegionSearch = ({ regionsList }) => {
             <div className='content'>
                 <h2 className='title is-3 has-text-centered'>Enter your zipcode:</h2>
             </div>
-            <div className="field box">
+            <div className="field box input-box">
                 <div className="control has-icons-left has-icons-right">
-                    <input onChange={(e) => checkInput(e)} className={`input ${input.length === 5 && included ? 'is-success' : input.length === 5 && !included ? 'is-danger' : 'input'}`} type="number"  placeholder="Zipcode" value={input} />
+                    <label htmlFor='zipcode' value='zipcode'/>
+                    <input onChange={(e) => checkInput(e)} className={`input ${input.length === 5 && included ? 'is-success' : input.length === 5 && !included ? 'is-danger' : 'input'} is-size-2 is-size-4-mobile`} type="number" placeholder="Zipcode" value={input} id='zipcode' />
                     <span className="icon is-small is-left">
                         <SearchIcon />
                     </span>

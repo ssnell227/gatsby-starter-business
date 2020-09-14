@@ -24,9 +24,9 @@ const ServicesPageTemplate = ({
                 <title >{meta_title}</title>
                 <meta name='description' content={meta_description} />
             </Helmet>
-            <section class="hero services-hero " >
-                <div class="hero-body">
-                    <div class="container box services-title">
+            <section className="hero services-hero " >
+                <div className="hero-body">
+                    <div className="container box services-title">
                         <h1 className='title is-size-2-desktop is-size-3-tablet is-size-4-mobile has-text-centered '>{title}</h1>
                     </div>
                 </div>

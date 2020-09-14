@@ -19,9 +19,9 @@ const AboutPageTemplate = ({ title, aboutBlockItem, aboutImage, meta_title, meta
           <title >{meta_title}</title>
           <meta name='description' content={meta_description} />
         </Helmet>
-        <section class="hero about-hero" >
-          <div class="hero-body">
-            <div class="container box about-title">
+        <section className="hero about-hero" >
+          <div className="hero-body">
+            <div className="container box about-title">
               <h1 className='title is-1 is-size-2-tablet is-size-3-mobile has-text-centered '>{title}</h1>
             </div>
           </div>
