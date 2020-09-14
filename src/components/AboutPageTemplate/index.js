@@ -1,21 +1,28 @@
 import React from 'react'
 import Content from '../Content'
 import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
 
 import './styles.scss'
+
+
 
 import SvgIcon from '@material-ui/core/SvgIcon';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
 import SearchIcon from '@material-ui/icons/Search';
 import BuildIcon from '@material-ui/icons/Build';
 
-const AboutPageTemplate = ({ title, aboutBlockItem, aboutImage }) => {
+const AboutPageTemplate = ({ title, aboutBlockItem, aboutImage, meta_title, meta_description }) => {
   return (
     <div className='container'>
-      <section class="hero about-hero">
+      <Helmet>
+        <title >{meta_title}</title>
+        <meta name='description' content={meta_description} />
+      </Helmet>
+      <section class="hero about-hero" >
         <div class="hero-body">
-          <div class="container">
-          <h1 className='title is-1 has-text-centered'>{title}</h1>
+          <div class="container box about-title">
+            <h1 className='title is-1 has-text-centered '>{title}</h1>
           </div>
         </div>
       </section>

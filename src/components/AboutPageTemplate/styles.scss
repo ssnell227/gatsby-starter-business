@@ -1,4 +1,17 @@
+.about-hero {
+    position: relative;
+    padding: 30px;
+    margin: 30px;
 
+    background-image: url('/img/ryanphotofam.jpg');
+    background-position: center;
+    .about-title {
+        color: white;
+        position: absolute;
+        left: 50%;
+    }
+
+}
 
 .about-block-container {
     min-height: 690px;

@@ -1,3 +1,18 @@
+.services-hero {
+    position: relative;
+    padding: 30px;
+    margin: 30px;
+
+    background-image: url('/img/ryanphotofam.jpg');
+    background-position: center;
+    .about-title {
+        color: white;
+        position: absolute;
+        left: 50%;
+    }
+
+}
+
 .pricing-card {
     min-height: 400px;
     border: 1px solid black;
