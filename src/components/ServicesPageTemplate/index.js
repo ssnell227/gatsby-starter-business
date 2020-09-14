@@ -18,7 +18,6 @@ const ServicesPageTemplate = ({
     pricingBlock
 
 }) => {
-    console.log(pricingBlock)
     return (
         <div>
             <Helmet>
