@@ -1,14 +1,21 @@
 .services-hero {
     position: relative;
-    padding: 30px;
-    margin: 30px;
-
-    background-image: url('/img/robert-ostheimer-yzhqa8pj_ui-unsplash.jpg');
-    background-position: left center;
+    margin: 50px 0px;
+    
+    background-image: url('/img/robert-ostheimer-yzhqa8pj_ui-unsplash-1-.jpg');
+    background-position: 50% 30%;
+    background-size: 1000px;
+    @media (min-width: 1024px) {
+        background-image: url('/img/robert-ostheimer-yzhqa8pj_ui-unsplash.jpg');
+    background-position: 50% 30%;
+    background-size: 2000px;
+    }
     .about-title {
         color: white;
         position: absolute;
-        left: 50%;
+        left: 10%;
+        top: 60%;
+        width: 50%;
     }
 
 }
