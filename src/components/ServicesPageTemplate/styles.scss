@@ -5,12 +5,8 @@
     
     background-image: url('/img/robert-ostheimer-yzhqa8pj_ui-unsplash-1-.jpg');
     background-position: 50% 30%;
-    background-size: 1000px;
-    @media (min-width: 1024px) {
-        background-image: url('/img/robert-ostheimer-yzhqa8pj_ui-unsplash.jpg');
-        background-position: 50% 30%;
-        background-size: 1900px;
-    }
+    background-size: 100%;
+   
     .about-title {
         color: white;
         position: absolute;
