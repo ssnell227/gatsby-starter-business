@@ -31,5 +31,5 @@ aboutBlockItem:
       Inspection will tell you everything you need to make confident decisions
       regarding your property transactions.   
     image: /img/unnamed.jpg
-aboutImage: /img/ryanphoto.jpg
+aboutImage: /img/ryanphotofam.jpg
 ---
