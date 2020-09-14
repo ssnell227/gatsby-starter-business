@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import './styles.scss'
 
 const RegionsPageTemplate = ({ metaTitle, metaDescription, title, regionsServed, regionsList }) => (
-    <div>
+    <div className='container'>
         <Helmet>
             <title >{metaTitle}</title>
             <meta name='description' content={metaDescription} />

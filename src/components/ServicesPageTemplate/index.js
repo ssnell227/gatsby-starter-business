@@ -20,7 +20,7 @@ const ServicesPageTemplate = ({
 }) => {
     console.log(pricingBlock)
     return (
-        <div>
+        <div className='container'>
             <Helmet>
                 <title >{meta_title}</title>
                 <meta name='description' content={meta_description} />
