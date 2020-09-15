@@ -36,7 +36,8 @@ const Carousel = ({ content }) => {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 4000,
-        pauseOnHover: true
+        pauseOnHover: true,
+        fade: true
     }
 
     console.log(content.carousel1.title)

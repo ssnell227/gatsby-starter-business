@@ -16,6 +16,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home-page"}
           - {label: Carousel, name: carousel, widget: object, fields: [{label: Carousel1, name: carousel1, widget: object, fields: [{label: title, name: title, widget: string}, {label: text, name: text, widget: text},{label: image, name: image, widget: image}]},{label: Carousel2, name: carousel2, widget: object, fields: [{label: title, name: title, widget: string}, {label: text, name: text, widget: text},{label: image, name: image, widget: image}]},{label: Carousel3, name: carousel3, widget: object, fields: [{label: title, name: title, widget: string}, {label: text, name: text, widget: text}, {label: image, name: image, widget: image}]}]}
+          - {label: 'Booking Banner', name: bookingBanner, widget: list, fileds: [{label: 'Banner item', name: bannerItem, widget: string}]}
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: text}
           - {label: Services, name: services, widget: list, fields: [{label: Image, name: image, widget: image}, {label: title, name: title, widget: string}]}

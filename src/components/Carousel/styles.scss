@@ -12,19 +12,36 @@
         }
         .carousel-title {
             z-index: 1;
+            opacity: 0;
             position: absolute;
-            top:40px;
-            left: 100px;
+            top: 40px;
+            left: 150px;
             font-size: 80px;
             font-weight: bold;
+            color: white;
+            transition: top 1s, opacity 1s;
         }
         .carousel-text {
             z-index: 1;
+            opacity: 0;
             position: absolute;
             top: 200px;
-            left: 400px;
+            left: 50px;
             font-size: 20px;
             font-weight: bold;
+            color: white;
+            transition: left 1s, opacity 1s;
+
+        }
+    }
+    .slick-active {
+        .carousel-title {
+            top:100px;
+            opacity: 1;
+        }
+        .carousel-text {
+            left: 100px;
+            opacity: 1
         }
     }
     .slick-prev:hover, .slick-next:hover {
