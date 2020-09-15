@@ -1,0 +1,14 @@
+.small-img {
+    width: 150px;
+    height: 150px;
+    max-width: 150px;
+    max-height: 150px;
+    margin-right: 50px;
+    @media (max-width: 768px) {
+        width: 350px;
+        height: 350px;
+        max-width: 350px;
+        max-height: 350px;
+        margin: auto;
+    }
+}

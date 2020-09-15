@@ -2,6 +2,9 @@ import React from 'react'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import SearchBox from '../SearchBox'
 
+import './styles.scss'
+
+
 const NavBar = ({ toggleNavbar, isActive }) => (
   <StaticQuery
     query={graphql`
@@ -12,7 +15,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
             }
         `}
     render={data => (
-      <nav className='navbar is-fixed-top' aria-label='main navigation'>
+      <nav className='navbar sticky-nav' aria-label='main navigation'>
         <div className='navbar-brand'>
           <Link to='/' className='navbar-item'>
             <strong>Fremont County Home Inspection</strong>
@@ -31,14 +34,17 @@ const NavBar = ({ toggleNavbar, isActive }) => (
 
           <div className='navbar-end'>
             {/* <SearchBox searchIndex={data.siteSearchIndex.index} /> */}
+            <Link className='navbar-item' to='/'>
+              Home
+            </Link>
             <Link className='navbar-item' to='/services'>
-                            Services
+              Services
             </Link>
             <Link className='navbar-item' to='/regions'>
-                            Regions
+              Regions
             </Link>
             <Link className='navbar-item' to='/about'>
-                            About
+              About
             </Link>
             <div className='navbar-item'>
               <div className='field is-grouped'>
@@ -46,7 +52,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
                   <Link
                     className='button is-primary is-outlined'
                     to='/contact'>
-                            Contact Us
+                    Contact Us
                   </Link>
                 </p>
               </div>

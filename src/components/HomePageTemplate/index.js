@@ -6,6 +6,7 @@ import { Link } from 'gatsby'
 import Services from '../Services'
 import InfoBlock from '../InfoBlock'
 import Carousel from '../Carousel'
+import GoogleReviews from '../GoogleReviews'
 
 
 
@@ -25,7 +26,7 @@ const HomePageTemplate = ({
       </Helmet>
       <section className='section section--gradient'>
         <div className='container'>
-            <Carousel content={carousel} />
+          <Carousel content={carousel} />
         </div>
       </section>
       <section className='section section--gradient'>
@@ -56,7 +57,11 @@ const HomePageTemplate = ({
         <div className='container'>
           <InfoBlock content={whyblock} imgSize='large' />
         </div>
-
+      </section>
+      <section className='section section--gradient'>
+        <div className='container'>
+          <GoogleReviews/>
+        </div>
       </section>
     </div>
   )

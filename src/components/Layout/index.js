@@ -4,6 +4,7 @@ import '../../assets/sass/styles.sass'
 import config from '../../../config'
 import NavBar from '../NavBar'
 import Footer from '../Footer'
+import NavTop from '../NavTop'
 
 class Layout extends Component {
   constructor (props) {
@@ -23,6 +24,7 @@ class Layout extends Component {
           <title>{config.siteTitle}</title>
           <meta name='description' content={config.siteDescription} />
         </Helmet>
+        <NavTop/>
         <NavBar isActive={this.state.isActive} toggleNavbar={() => this.toggleNavbar()} />
         <div id='content-wrapper'>
           {this.props.children}

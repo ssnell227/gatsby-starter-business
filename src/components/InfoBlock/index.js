@@ -3,15 +3,15 @@ import React from 'react'
 import './styles.scss'
 
 
-const InfoBlock = ({ content, imgSize }) => (
-  <div className='section'>
-    <article className='columns'>
-      <div className='column is-4'>
-          <figure className={`image is-square`}>
-            <img  src={content.image} />
+const InfoBlock = ({ content, smallImg }) => (
+  <div className='container'>
+    <article className='columns '>
+      <div className={`column  ${smallImg ? 'is-2 is-offset-1 small-img' : 'is-4'}`}>
+          <figure className={`image is-square ${smallImg && 'small-img'}`}>
+            <img  src={content.image} className={`${smallImg && 'small-img'}`} />
           </figure>
-        </div>
-      <div className='column is-8'>
+      </div>
+      <div className='column is-8 '>
         <div className='content'>
           <h2>{content.title}</h2>
           <ul>

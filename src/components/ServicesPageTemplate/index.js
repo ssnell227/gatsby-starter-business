@@ -69,25 +69,17 @@ const ServicesPageTemplate = ({
                     <div className='content'>
                         <h2 className='title is-1 has-text-centered'>Other Services</h2>
                     </div>
-                <section className='section section--gradient' id='asbesdos'>
-                    <div className='container' >
-                        <InfoBlock content={asbesdosBlock} />
-                    </div>
+                <section className='section section--gradient ' id='asbesdos'>
+                        <InfoBlock content={asbesdosBlock} smallImg={true}/>
                 </section>
-                <section className='section section--gradient' id='lead'>
-                    <div className='container'>
-                        <InfoBlock content={leadBlock} />
-                    </div>
+                <section className='section section--gradient ' id='lead'>
+                        <InfoBlock content={leadBlock} smallImg={true} />
                 </section>
                 <section className='section section--gradient' id='radon'>
-                    <div className='container'>
-                        <InfoBlock content={radonBlock} />
-                    </div>
+                        <InfoBlock content={radonBlock} smallImg={true}/>
                 </section>
                 <section className='section section--gradient' id='water'>
-                    <div className='container'>
-                        <InfoBlock content={wellWaterBlock} />
-                    </div>
+                        <InfoBlock content={wellWaterBlock} smallImg={true} />
                 </section>
                 <section className='section section--gradient' id='pricing'>
                     <h1 className='title is-1 has-text-centered'>{pricingBlock.title}</h1>
