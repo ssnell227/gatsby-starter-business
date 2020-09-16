@@ -17,7 +17,8 @@ const HomePageTemplate = ({
   meta_description,
   carousel,
   whyblock,
-  services
+  services,
+  bookingBanner
 }) => (
     <div>
       <Helmet>
@@ -48,6 +49,14 @@ const HomePageTemplate = ({
           </div>
         </div>
       </section>
+      <section className='section hero is-primary'>
+        <div className='hero-body'>
+          <div className='container'>
+            <h2 className='subtitle'>{bookingBanner}</h2>
+            <button className='button is-white is-outlined'>Schedule an appointment now</button>
+          </div>
+        </div>
+      </section>
       <section className='section section--gradient'>
         <div className='container'>
           <Services services={services} />
@@ -60,7 +69,7 @@ const HomePageTemplate = ({
       </section>
       <section className='section section--gradient'>
         <div className='container'>
-          <GoogleReviews/>
+          <GoogleReviews />
         </div>
       </section>
     </div>

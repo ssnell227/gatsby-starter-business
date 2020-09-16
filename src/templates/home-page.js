@@ -18,6 +18,7 @@ const HomePage = ({ data }) => {
         carousel={frontmatter.carousel}
         whyblock={frontmatter.whyblock}
         services={frontmatter.services}
+        bookingBanner={frontmatter.bookingBanner}
       />
     </Layout>
   )
@@ -71,6 +72,7 @@ query IndexPage($id: String) {
         image
         title
       }
+      bookingBanner
     }
   }
 }
