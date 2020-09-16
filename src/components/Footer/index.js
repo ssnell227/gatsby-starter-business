@@ -24,23 +24,21 @@ const Footer = () => {
                 <p>Lander, Wyoming</p>
             </div>
         </div>
-      <nav className='navbar bottom-nav'>
+      <nav className='navbar bottom-nav is-spaced is-flex-touch'>
         <div className='navbar-start'>
           <div className='navbar-item'>
-            <p>
+            <p className='has-text-centered'>
               {config.copyright}
             </p>
           </div>
         </div>
-        <div className='navbar-end'>
+        <div className='navbar-end media-icons is-flex-touch'>
           <a href='https://www.facebook.com/FremontCountyHomeInspection' target='__blank' className='nav-icon navbar-item'>
             <FacebookIcon />
           </a>
           <a href='https://www.google.com/maps/place/Fremont+County+Home+Inspection/@42.823219,-108.7170646,17z/data=!3m1!4b1!4m5!3m4!1s0x875901046d4f74db:0x4c347fa58c67fa94!8m2!3d42.823219!4d-108.7148759' target='__blank' className='navbar-item'>
             <img src='/img/googleclear.png' width='30' />
           </a>
-          <div className='navbar-item'/>
-          <div className='navbar-item'/>
         </div>
       </nav>
     </footer>

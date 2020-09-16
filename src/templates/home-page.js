@@ -1,12 +1,29 @@
-import React from 'react'
+import React, {useEffect, useRef} from 'react'
+import {useIntersection} from 'react-use'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import HomePageTemplate from '../components/HomePageTemplate'
 import Layout from '../components/Layout'
 
+import {slideIn, slideOut} from '../utils/animations'
+
 const HomePage = ({ data }) => {
-  console.log(data)
   const { frontmatter } = data.markdownRemark
+  const bookingBannerRef = useRef(null)
+
+  const intersection = useIntersection(bookingBannerRef, {
+    root: null,
+    rootMargin: '0px',
+    threshold: .2
+})
+
+useEffect(() => {
+  if (intersection && intersection.intersectionRatio > .2) {
+      slideIn('.booking-banner-content')
+  } else {
+    slideOut('.booking-banner-content')
+  }
+}, [intersection])
 
   return (
     <Layout>
@@ -19,6 +36,7 @@ const HomePage = ({ data }) => {
         whyblock={frontmatter.whyblock}
         services={frontmatter.services}
         bookingBanner={frontmatter.bookingBanner}
+        bookingBannerRef={bookingBannerRef}
       />
     </Layout>
   )

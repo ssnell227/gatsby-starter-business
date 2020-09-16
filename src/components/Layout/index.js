@@ -5,7 +5,6 @@ import config from '../../../config'
 import NavBar from '../NavBar'
 import Footer from '../Footer'
 import NavTop from '../NavTop'
-import PreFooter from '../PreFooter'
 
 class Layout extends Component {
   constructor (props) {
@@ -30,7 +29,6 @@ class Layout extends Component {
         <div id='content-wrapper'>
           {this.props.children}
         </div>
-        <PreFooter/>
         <Footer />
       </div>
     )

@@ -18,7 +18,8 @@ const HomePageTemplate = ({
   carousel,
   whyblock,
   services,
-  bookingBanner
+  bookingBanner,
+  bookingBannerRef
 }) => (
     <div>
       <Helmet>
@@ -49,9 +50,9 @@ const HomePageTemplate = ({
           </div>
         </div>
       </section>
-      <section className='section hero is-primary'>
+      <section className='section hero is-primary' ref={bookingBannerRef}>
         <div className='hero-body'>
-          <div className='container'>
+          <div className='container booking-banner-content'>
             <h2 className='subtitle'>{bookingBanner}</h2>
             <button className='button is-white is-outlined'>Schedule an appointment now</button>
           </div>
