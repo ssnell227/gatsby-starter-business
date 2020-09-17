@@ -4,7 +4,14 @@ import './styles.scss'
 
 import RegionSearch from '../RegionSearch'
 
-const RegionsPageTemplate = ({ metaTitle, metaDescription, title, regionsServed, regionsList }) => (
+const RegionsPageTemplate = ({ 
+    metaTitle, 
+    metaDescription, 
+    title, 
+    regionsServed, 
+    regionsList,
+    titleRef
+}) => (
     <div>
         <Helmet>
             <title >{metaTitle}</title>
@@ -12,7 +19,7 @@ const RegionsPageTemplate = ({ metaTitle, metaDescription, title, regionsServed,
         </Helmet>
         <section className="hero regions-hero" >
             <div className="hero-body">
-                <div className="container box regions-title">
+                <div ref={titleRef} className="container box regions-title">
                     <h1 className='title is-size-1-desktop is-size-3-tablet is-size-4-mobile has-text-centered '>{title}</h1>
                 </div>
             </div>
@@ -31,7 +38,7 @@ const RegionsPageTemplate = ({ metaTitle, metaDescription, title, regionsServed,
                                     <h2 className='title is-3 has-text-centered'>{item.title}</h2>
                                     <div className='card-content'>
                                         <p>{item.blurb}</p>
-                                        <ul>
+                                        <ul className='regions-list'>
                                             {item.title === 'Fremont County' ?
                                                 regionsList.filter(regionItem => regionItem.region.county === 'Fremont').map((regionItem, index) => {
                                                     return <li key={`city-${index}`}>

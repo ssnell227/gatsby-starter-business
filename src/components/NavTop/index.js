@@ -9,7 +9,7 @@ const NavTop = () => (
     <nav className='navbar top-nav is-primary is-spaced is-flex-touch'>
         <div className='navbar-start'>
             <div className='navbar-item'>
-                <a className='button is-white is-outlined'>Schedule a Home Inspection</a>
+                <a target='__blank' href='https://schedule-a-home-inspection-uub7y.appointlet.com/' className='button is-white is-outlined'>Schedule a Home Inspection</a>
             </div>
         </div>
         <div className='navbar-end is-flex-touch media-icons'>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import {Link} from 'gatsby'
 
 import SearchIcon from '@material-ui/icons/Search';
 import CheckIcon from '@material-ui/icons/Check';
@@ -48,7 +49,7 @@ const RegionSearch = ({ regionsList }) => {
                 {input.length === 5 && included ?
                     <p className="help is-success">We serve your area!</p>
                     : input.length === 5 && !included ?
-                        <p className="help is-danger">Contact us about services for your region.</p>
+                        <p className="help is-danger"><Link to='/contact'>Contact us</Link> about special service for your region.</p>
                         : null
 
                 }

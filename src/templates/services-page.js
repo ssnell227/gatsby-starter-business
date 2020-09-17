@@ -1,10 +1,51 @@
-import React from 'react'
+import React, {useRef, useEffect}  from 'react'
+import {useIntersection} from 'react-use'
 import Layout from '../components/Layout'
 import ServicesPageTemplate from '../components/ServicesPageTemplate'
 import {graphql} from 'gatsby'
 
+import { slideIn, slideOut, slideInRight, slideOutRight, fadeIn, fadeOut } from '../utils/animations'
+
+
 const ServicesPage = ({ data}) => {
     const { frontmatter } = data.markdownRemark
+
+    //title animation
+    const titleRef = useRef(null)
+    
+    const titleIntersection = useIntersection(titleRef, {
+      root: null,
+      rootMargin: '0px',
+      threshold: .2
+    })
+
+    useEffect(() => {
+      if (titleIntersection && titleIntersection.intersectionRatio > .2) {
+        slideIn('.services-title')
+      } else {
+
+        slideOut('.services-title')
+      }
+    }, [titleIntersection])
+
+    //button animation
+    const buttonRef = useRef(null)
+
+    const buttonIntersection = useIntersection(buttonRef, {
+      root: null,
+      rootMargin: '0px',
+      threshold: .2
+    })
+
+    useEffect(() => {
+      if (buttonIntersection && buttonIntersection.intersectionRatio > .2) {
+        slideIn('.button-left')
+        slideInRight('.button-right')
+      } else {
+        slideOut('.button-left')
+        slideOutRight('.button-right')
+      }
+    }, [buttonIntersection])
     return (
         <Layout>
             <ServicesPageTemplate
@@ -19,6 +60,8 @@ const ServicesPage = ({ data}) => {
             radonBlock={frontmatter.radonBlock}
             wellWaterBlock={frontmatter.wellWaterBlock}
             pricingBlock={frontmatter.pricingBlock}
+            titleRef={titleRef}
+            buttonRef={buttonRef}
              />
         </Layout>
     )

@@ -9,6 +9,12 @@
         height: 350px;
         max-width: 350px;
         max-height: 350px;
-        margin: auto;
+        margin:auto;
+    }
+    @media (max-width: 500px) {
+        width: 250px;
+        height: 250px;
+        max-width: 250px;
+        max-height: 250px;
     }
 }

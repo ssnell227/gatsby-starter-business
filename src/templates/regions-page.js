@@ -1,12 +1,31 @@
-import React from 'react'
+import React, {useRef, useEffect} from 'react'
+import {useIntersection} from 'react-use'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import RegionsPageTemplate from '../components/RegionsPageTemplate'
 
+import {fadeIn, fadeOut} from '../utils/animations'
+
 const RegionsPage = ({data}) => {
     const { frontmatter } = data.markdownRemark
-    console.log(data)
+    //title animation
+    const titleRef = useRef(null)
+
+    const titleIntersection = useIntersection(titleRef, {
+      root: null,
+      rootMargin: '0px',
+      threshold: .2
+    })
+
+    useEffect(() => {
+      if (titleIntersection && titleIntersection.intersectionRatio > .2) {
+        fadeIn('.regions-title')
+      } else {
+
+        fadeOut('.regions-title')
+      }
+    }, [titleIntersection])
     return (
         <Layout>
             <RegionsPageTemplate
@@ -15,6 +34,7 @@ const RegionsPage = ({data}) => {
             title={frontmatter.title}
             regionsServed={frontmatter.regionsServed}
             regionsList={frontmatter.regionsList}
+            titleRef={titleRef}
             />
         </Layout>
     )

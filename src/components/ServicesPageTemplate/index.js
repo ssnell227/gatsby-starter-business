@@ -16,8 +16,9 @@ const ServicesPageTemplate = ({
     leadBlock,
     radonBlock,
     wellWaterBlock,
-    pricingBlock
-
+    pricingBlock,
+    titleRef,
+    buttonRef
 }) => {
     return (
         <div>
@@ -27,7 +28,7 @@ const ServicesPageTemplate = ({
             </Helmet>
             <section className="hero services-hero " >
                 <div className="hero-body">
-                    <div className="container box services-title">
+                    <div ref={titleRef} className="container box services-title">
                         <h1 className='title is-size-2-desktop is-size-3-tablet is-size-4-mobile has-text-centered '>{title}</h1>
                     </div>
                 </div>
@@ -58,11 +59,11 @@ const ServicesPageTemplate = ({
                             <p className='has-text-centered'>{homeInspectionBlock[2].text}</p>
                         </div>
                     </div>
-                    <div className='level is-mobile'>
+                    <div ref={buttonRef} className='level is-mobile'>
                         <div className='level-item ' />
-                        <Link to='/services#pricing' className='button is-large level-item'>Pricing</Link>
+                        <Link to='/services#pricing' className='button is-large is-primary level-item button-left'>Pricing</Link>
                         <div className='level-item' />
-                        <a target='__blank' href='https://schedule-a-home-inspection-uub7y.appointlet.com/' className='button is-large level-item'>Book Now</a>
+                        <a target='__blank' href='https://schedule-a-home-inspection-uub7y.appointlet.com/' className='button is-large is-primary level-item button-right'>Book Now</a>
                         <div className='level-item' />
                     </div>
                 </section>

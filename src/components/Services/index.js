@@ -1,16 +1,16 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import './styles.sass'
+import './styles.scss'
 
-const Services = ({ services }) => (
-    <div className='section'>
+const Services = ({ services, servicesRef }) => (
+    <div ref={servicesRef} className='section services-section'>
         <div className='content'>
             <h2 className='title is-1 has-text-centered'>Services</h2>
         </div>
         <div className='columns'>
             <div className='column'>
                 <Link to='/services'>
-                    <div className='card'>
+                    <div className='card services-card'>
                         <figure className='image is-square'>
                             <img src={services[0].image} />
                         </figure>
@@ -20,7 +20,7 @@ const Services = ({ services }) => (
             </div>
             <div className='column'>
                 <Link to='/services#asbesdos'>
-                    <div className='card'>
+                    <div className='card services-card'>
                         <figure className='image is-square'>
                             <img src={services[1].image} />
                         </figure>
@@ -32,7 +32,7 @@ const Services = ({ services }) => (
             <div className='column '>
                 <Link to='/services#lead'>
 
-                    <div className='card'>
+                    <div className='card services-card'>
                         <figure className='image is-square'>
                             <img src={services[2].image} />
                         </figure>
@@ -43,7 +43,7 @@ const Services = ({ services }) => (
             <div className='column '>
                 <Link to='/services#radon'>
 
-                    <div className='card'>
+                    <div className='card services-card'>
                         <figure className='image is-square'>
                             <img src={services[3].image} />
                         </figure>
@@ -53,7 +53,7 @@ const Services = ({ services }) => (
             </div>
             <div className='column '>
                 <Link to='/services#water'>
-                    <div className='card'>
+                    <div className='card services-card'>
                         <figure className='image is-square'>
                             <img src={services[4].image} />
                         </figure>

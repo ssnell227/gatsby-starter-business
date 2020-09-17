@@ -19,7 +19,8 @@ const HomePageTemplate = ({
   whyblock,
   services,
   bookingBanner,
-  bookingBannerRef
+  bookingBannerRef,
+  servicesRef,
 }) => (
     <div>
       <Helmet>
@@ -60,11 +61,11 @@ const HomePageTemplate = ({
       </section>
       <section className='section section--gradient'>
         <div className='container'>
-          <Services services={services} />
+          <Services services={services} servicesRef={servicesRef} />
         </div>
       </section>
       <section className='section section--gradient'>
-        <div className='container'>
+        <div  className='container '>
           <InfoBlock content={whyblock} imgSize='large' />
         </div>
       </section>

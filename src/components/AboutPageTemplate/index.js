@@ -13,7 +13,15 @@ import MenuBookIcon from '@material-ui/icons/MenuBook';
 import SearchIcon from '@material-ui/icons/Search';
 import BuildIcon from '@material-ui/icons/Build';
 
-const AboutPageTemplate = ({ title, aboutBlockItem, aboutImage, meta_title, meta_description }) => {
+const AboutPageTemplate = ({ 
+  title, 
+  aboutBlockItem, 
+  aboutImage, 
+  meta_title, 
+  meta_description,
+  titleRef,
+  buttonRef
+}) => {
   return (
     <div>
         <Helmet>
@@ -22,7 +30,7 @@ const AboutPageTemplate = ({ title, aboutBlockItem, aboutImage, meta_title, meta
         </Helmet>
         <section className="hero about-hero" >
           <div className="hero-body">
-            <div className="container box about-title">
+            <div ref={titleRef} className="container box about-title">
               <h1 className='title is-1 is-size-2-tablet is-size-3-mobile has-text-centered '>{title}</h1>
             </div>
           </div>
@@ -59,14 +67,14 @@ const AboutPageTemplate = ({ title, aboutBlockItem, aboutImage, meta_title, meta
         </section>
         <section className='section section--gradient'>
           <div className='columns'>
-            {/* <div className='column'>
-            <figure className='image is-3by4'>
+            <div className='column'>
+            <figure className='image '>
               <img src={aboutImage} alt='Ryan Morse-Brady' />
             </figure>
-          </div> */}
-            <div className='column buttons-container'>
-              <Link to='/contact' className='button is-large'>Contact</Link>
-              <a href='https://schedule-a-home-inspection-uub7y.appointlet.com' target='__blank' className='button is-large'>Book Now</a>
+          </div>
+            <div ref={buttonRef} className='column buttons-container'>
+              <Link to='/contact' className='button is-primary is-large'>Contact</Link>
+              <a href='https://schedule-a-home-inspection-uub7y.appointlet.com' target='__blank' className='button is-primary is-large'>Book Now</a>
             </div>
           </div>
         </section>

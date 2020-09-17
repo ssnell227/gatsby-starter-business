@@ -1,5 +1,14 @@
 .region-card {
     min-height: 400px;
+    .regions-list {
+        height: 180px;
+        margin-top: 20px;
+        list-style-type: square;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
 }
 
 .regions-hero {

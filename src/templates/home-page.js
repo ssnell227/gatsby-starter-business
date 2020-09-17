@@ -1,29 +1,48 @@
-import React, {useEffect, useRef} from 'react'
-import {useIntersection} from 'react-use'
+import React, { useEffect, useRef } from 'react'
+import { useIntersection } from 'react-use'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import HomePageTemplate from '../components/HomePageTemplate'
 import Layout from '../components/Layout'
 
-import {slideIn, slideOut} from '../utils/animations'
+import { slideIn, slideOut, fadeIn, fadeOut } from '../utils/animations'
 
 const HomePage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
   const bookingBannerRef = useRef(null)
+  const servicesRef = useRef(null)
 
-  const intersection = useIntersection(bookingBannerRef, {
+//booking banner animation
+  const bookingBannerIntersection = useIntersection(bookingBannerRef, {
     root: null,
     rootMargin: '0px',
     threshold: .2
-})
+  })
 
-useEffect(() => {
-  if (intersection && intersection.intersectionRatio > .2) {
+  useEffect(() => {
+    if (bookingBannerIntersection && bookingBannerIntersection.intersectionRatio > .2) {
       slideIn('.booking-banner-content')
-  } else {
-    slideOut('.booking-banner-content')
-  }
-}, [intersection])
+    } else {
+      slideOut('.booking-banner-content')
+    }
+  }, [bookingBannerIntersection])
+
+  //services animation
+  const servicesIntersection = useIntersection(servicesRef, {
+    root: null,
+    rootMargin: '0px',
+    threshold: .3
+  })
+
+  useEffect(() => {
+    if (servicesIntersection && servicesIntersection.intersectionRatio > .3) {
+      fadeIn('.services-section')
+    } else {
+      fadeOut('.services-section')
+    }
+  })
+
+  
 
   return (
     <Layout>
@@ -37,6 +56,7 @@ useEffect(() => {
         services={frontmatter.services}
         bookingBanner={frontmatter.bookingBanner}
         bookingBannerRef={bookingBannerRef}
+        servicesRef={servicesRef}
       />
     </Layout>
   )

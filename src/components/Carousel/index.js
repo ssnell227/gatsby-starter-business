@@ -42,7 +42,6 @@ const Carousel = ({ content }) => {
         fade: true
     }
 
-    console.log(content.carousel1.title)
     return (
         <div className='columns'>
 
