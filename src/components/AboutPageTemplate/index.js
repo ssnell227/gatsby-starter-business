@@ -70,7 +70,7 @@ const AboutPageTemplate = ({
           <div className='columns'>
             <div className='column'>
               <figure className='image '>
-                <img src={aboutImage} alt='Ryan Morse-Brady' />
+                <img src={aboutImage} alt='Photo of owner, Ryan Morse-Brady' />
               </figure>
             </div>
             <div ref={buttonRef} className='column buttons-container'>

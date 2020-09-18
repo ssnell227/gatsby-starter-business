@@ -39,21 +39,21 @@ const ServicesPageTemplate = ({
                     <div className='columns'>
                         <div className='column '>
                             <figure className='image is-square'>
-                                <img src={homeInspectionBlock[0].image} />
+                                <img src={homeInspectionBlock[0].image} alt={homeInspectionBlock[0].title} />
                             </figure>
                             <h3 className='subtitle has-text-centered'>{homeInspectionBlock[0].title}</h3>
                             <p className='has-text-centered'>{homeInspectionBlock[0].text}</p>
                         </div>
                         <div className='column '>
                             <figure className='image is-square'>
-                                <img src={homeInspectionBlock[1].image} />
+                                <img src={homeInspectionBlock[1].image} alt={homeInspectionBlock[1].title}  />
                             </figure>
                             <h3 className='subtitle has-text-centered'>{homeInspectionBlock[1].title}</h3>
                             <p className='has-text-centered'>{homeInspectionBlock[1].text}</p>
                         </div>
                         <div className='column '>
                             <figure className='image is-square'>
-                                <img src={homeInspectionBlock[2].image} />
+                                <img src={homeInspectionBlock[2].image} alt={homeInspectionBlock[2].title}  />
                             </figure>
                             <h3 className='subtitle has-text-centered'>{homeInspectionBlock[2].title}</h3>
                             <p className='has-text-centered'>{homeInspectionBlock[2].text}</p>

@@ -15,7 +15,7 @@ const NextArrow = ({ className, style, onClick }) => (
         style={{ ...style, height: '400px' }}
         onClick={onClick}
     >
-        <img style={{ position: 'absolute', top: '50%', left: '0px' }} src={rightArrow} />
+        <img style={{ position: 'absolute', top: '50%', left: '0px' }} src={rightArrow} alt='next'/>
     </div>
 )
 const PrevArrow = ({ className, style, onClick }) => (
@@ -24,7 +24,7 @@ const PrevArrow = ({ className, style, onClick }) => (
         style={{ ...style, height: '400px' }}
         onClick={onClick}
     >
-        <img style={{ position: 'absolute', top: '50%', left: '0px' }} src={leftArrow} />
+        <img style={{ position: 'absolute', top: '50%', left: '0px' }} src={leftArrow} alt='previous' />
     </div>
 )
 
@@ -52,7 +52,7 @@ const Carousel = ({ content }) => {
                             'has-text-weight-bold is-size-4 is-size-2-tablet is-size-1-desktop carousel-text title-1'
                         >{content.carousel1.title}</h2>
                         <p className=' has-text-weight-bold is-size-6 is-size-4-tablet carousel-text text-1 '>{content.carousel1.text}</p>
-                        <img src={content.carousel1.image} />
+                        <img src={content.carousel1.image} alt='image of red roofed house in wyoming'/>
                     </div>
                     <div className='slider-item'>
                         <div className='carousel-icon icon-2'>
@@ -60,7 +60,7 @@ const Carousel = ({ content }) => {
                         </div>
                         <h2 className='has-text-weight-bold has-text-right is-size-4 is-size-2-tablet is-size-1-desktop carousel-text title-2'>{content.carousel2.title}</h2>
                         <p className='carousel-text has-text-right has-text-weight-bold is-size-6 is-size-5-tablet is-size-4-desktop text-2'>{content.carousel2.text}</p>
-                        <img src={content.carousel2.image} />
+                        <img src={content.carousel2.image} alt='image of tools used in home inspection'/>
                     </div>
                     <div className='slider-item'>
                         <div className='carousel-icon icon-3'>
@@ -68,7 +68,7 @@ const Carousel = ({ content }) => {
                         </div>
                         <h2 className='has-text-weight-bold is-size-4 is-size-2-tablet is-size-1-desktop carousel-text title-3'>{content.carousel3.title}</h2>
                         <p className='has-text-weight-bold is-size-6 is-size-4-tablet carousel-text text-3'>{content.carousel3.text}</p>
-                        <img src={content.carousel3.image} />
+                        <img src={content.carousel3.image} alt='image of house in wyoming with mountains in background' />
                     </div>
                 </Slider>
             </div>

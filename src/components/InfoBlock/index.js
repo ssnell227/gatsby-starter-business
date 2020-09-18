@@ -8,7 +8,7 @@ const InfoBlock = ({ content, smallImg }) => (
     <article className='columns '>
       <div className={`column  ${smallImg ? 'is-2 is-offset-1 small-img' : 'is-4'}`}>
           <figure className={`image is-square ${smallImg && 'small-img'}`}>
-            <img  src={content.image} className={`${smallImg && 'small-img'}`} />
+            <img  src={content.image} className={`${smallImg && 'small-img'}`} alt={item.title}/>
           </figure>
       </div>
       <div className='column is-8 '>
