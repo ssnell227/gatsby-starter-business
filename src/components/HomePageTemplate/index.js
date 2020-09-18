@@ -39,9 +39,9 @@ const HomePageTemplate = ({
               <div className='column is-10 is-offset-1'>
                 <div className='content'>
                   <div>
-                    <h3 className='has-text-weight-semibold is-size-2'>
+                    <h1 className='has-text-weight-semibold is-size-2'>
                       {heading}
-                    </h3>
+                    </h1>
                     <p>{description}</p>
                     <Link className='button is-primary' to='/about'>About us</Link>
                   </div>
@@ -54,7 +54,7 @@ const HomePageTemplate = ({
       <section className='section hero is-primary' ref={bookingBannerRef}>
         <div className='hero-body'>
           <div className='container booking-banner-content'>
-            <h2 className='subtitle'>{bookingBanner}</h2>
+            <h3 className='subtitle'>{bookingBanner}</h3>
             <button className='button is-white is-outlined'>Schedule an appointment now</button>
           </div>
         </div>

@@ -26,7 +26,7 @@ const RegionSearch = ({ regionsList }) => {
     return (
         <div>
             <div className='content'>
-                <h2 className='title is-3 has-text-centered'>Enter your zipcode:</h2>
+                <h3 className='title is-3 has-text-centered'>Enter your zipcode:</h3>
             </div>
             <div className="field box input-box">
                 <div className="control has-icons-left has-icons-right">

@@ -2,7 +2,7 @@ import React from 'react'
 import Content from '../Content'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import {Link} from 'gatsby'
+import { Link } from 'gatsby'
 
 import './styles.scss'
 
@@ -13,28 +13,28 @@ import MenuBookIcon from '@material-ui/icons/MenuBook';
 import SearchIcon from '@material-ui/icons/Search';
 import BuildIcon from '@material-ui/icons/Build';
 
-const AboutPageTemplate = ({ 
-  title, 
-  aboutBlockItem, 
-  aboutImage, 
-  meta_title, 
+const AboutPageTemplate = ({
+  title,
+  aboutBlockItem,
+  aboutImage,
+  meta_title,
   meta_description,
   titleRef,
   buttonRef
 }) => {
   return (
     <div>
-        <Helmet>
-          <title >{meta_title}</title>
-          <meta name='description' content={meta_description} />
-        </Helmet>
-        <section className="hero about-hero" >
-          <div className="hero-body">
-            <div ref={titleRef} className="container box about-title">
-              <h1 className='title is-1 is-size-2-tablet is-size-3-mobile has-text-centered '>{title}</h1>
-            </div>
+      <Helmet>
+        <title >{meta_title}</title>
+        <meta name='description' content={meta_description} />
+      </Helmet>
+      <section className="hero about-hero" >
+        <div className="hero-body">
+          <div ref={titleRef} className="container box about-title">
+            <h1 className='title is-1 is-size-2-tablet is-size-3-mobile has-text-centered '>{title}</h1>
           </div>
-        </section>
+        </div>
+      </section>
       <div className='container'>
         <section className='section section--gradient'>
           <div className='columns is-desktop'>
@@ -51,13 +51,14 @@ const AboutPageTemplate = ({
                   </figure>
                   <div className='card-content'>
                     <div className='content has-text-centered about-block-titles'>
-                      <p className='title '>{block.title}</p>
+                      <h2 className='title '>{block.title}</h2>
                       <p className='subtitle '>{block.subtitle}</p>
                     </div>
                     <div className='box'>
-                      {block.blurb}
+                      <p>
+                        {block.blurb}
+                      </p>
                     </div>
-
                   </div>
                 </div>
               </div>
@@ -68,10 +69,10 @@ const AboutPageTemplate = ({
         <section className='section section--gradient'>
           <div className='columns'>
             <div className='column'>
-            <figure className='image '>
-              <img src={aboutImage} alt='Ryan Morse-Brady' />
-            </figure>
-          </div>
+              <figure className='image '>
+                <img src={aboutImage} alt='Ryan Morse-Brady' />
+              </figure>
+            </div>
             <div ref={buttonRef} className='column buttons-container'>
               <Link to='/contact' className='button is-primary is-large'>Contact</Link>
               <a href='https://schedule-a-home-inspection-uub7y.appointlet.com' target='__blank' className='button is-primary is-large'>Book Now</a>

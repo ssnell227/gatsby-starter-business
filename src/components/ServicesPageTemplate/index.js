@@ -83,12 +83,12 @@ const ServicesPageTemplate = ({
                         <InfoBlock content={wellWaterBlock} smallImg={true} />
                 </section>
                 <section className='section section--gradient' id='pricing'>
-                    <h1 className='title is-1 has-text-centered'>{pricingBlock.title}</h1>
+                    <h2 className='title is-1 has-text-centered'>{pricingBlock.title}</h2>
                     <div className='columns'>
                         <div className='column'>
                             <div className='section'>
                                 <div className=' pricing-card'>
-                                    <h1 className='title is-3 has-text-centered'>{pricingBlock.homeInspectionPricing.title}</h1>
+                                    <h3 className='title is-3 has-text-centered'>{pricingBlock.homeInspectionPricing.title}</h3>
                                     <div className='card-content'>
                                         {pricingBlock.homeInspectionPricing.pricing.map((pricingItem, index) => (
                                             <div className='pricing-item' key={`homeInspectionPricing-${index}`}>
@@ -102,7 +102,7 @@ const ServicesPageTemplate = ({
                         <div className='column '>
                             <div className='section'>
                                 <div className='pricing-card'>
-                                    <h1 className='title is-3 has-text-centered'>{pricingBlock.additionalPricing.title}</h1>
+                                    <h3 className='title is-3 has-text-centered'>{pricingBlock.additionalPricing.title}</h3>
                                     <div className='card-content'>
                                         {pricingBlock.additionalPricing.pricing.map((pricingItem, index) => (
                                             <div className='pricing-item' key={`homeInspectionPricing-${index}`}>

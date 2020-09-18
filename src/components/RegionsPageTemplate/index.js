@@ -29,13 +29,13 @@ const RegionsPageTemplate = ({
                 <RegionSearch regionsList={regionsList} />
             </section>
             <section>
-                <h1 className='title is-1 has-text-centered'>{regionsServed.title}</h1>
+                <h2 className='title is-1 has-text-centered'>{regionsServed.title}</h2>
                 <div className='columns'>
                     {regionsServed.regionType.map((item, index) => (
                         <div key={`region-${index}`} className='column'>
                             <div className='section'>
                                 <div className=' region-card'>
-                                    <h2 className='title is-3 has-text-centered'>{item.title}</h2>
+                                    <h3 className='title is-3 has-text-centered'>{item.title}</h3>
                                     <div className='card-content'>
                                         <p>{item.blurb}</p>
                                         <ul className='regions-list'>

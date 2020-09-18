@@ -5,7 +5,7 @@ import './styles.scss'
 const Services = ({ services, servicesRef }) => (
     <div ref={servicesRef} className='section services-section'>
         <div className='content'>
-            <h2 className='title is-1 has-text-centered'>Services</h2>
+            <h1 className='title is-1 has-text-centered'>Services</h1>
         </div>
         <div className='columns'>
             <div className='column'>
@@ -14,7 +14,7 @@ const Services = ({ services, servicesRef }) => (
                         <figure className='image is-square'>
                             <img src={services[0].image} />
                         </figure>
-                        <h3 className='subtitle has-text-centered' >{services[0].title}</h3>
+                        <h4 className='subtitle has-text-centered' >{services[0].title}</h4>
                     </div>
                 </Link>
             </div>
@@ -24,7 +24,7 @@ const Services = ({ services, servicesRef }) => (
                         <figure className='image is-square'>
                             <img src={services[1].image} />
                         </figure>
-                        <h3 className='subtitle has-text-centered' >{services[1].title}</h3>
+                        <h4 className='subtitle has-text-centered' >{services[1].title}</h4>
                     </div>
                 </Link>
 
@@ -36,7 +36,7 @@ const Services = ({ services, servicesRef }) => (
                         <figure className='image is-square'>
                             <img src={services[2].image} />
                         </figure>
-                        <h3 className='subtitle has-text-centered' >{services[2].title}</h3>
+                        <h4 className='subtitle has-text-centered' >{services[2].title}</h4>
                     </div>
                 </Link>
             </div>
@@ -47,7 +47,7 @@ const Services = ({ services, servicesRef }) => (
                         <figure className='image is-square'>
                             <img src={services[3].image} />
                         </figure>
-                        <h3 className='subtitle has-text-centered' >{services[3].title}</h3>
+                        <h4 className='subtitle has-text-centered' >{services[3].title}</h4>
                     </div>
                 </Link>
             </div>
@@ -57,7 +57,7 @@ const Services = ({ services, servicesRef }) => (
                         <figure className='image is-square'>
                             <img src={services[4].image} />
                         </figure>
-                        <h3 className='subtitle has-text-centered' >{services[4].title}</h3>
+                        <h4 className='subtitle has-text-centered' >{services[4].title}</h4>
                     </div>
                 </Link>
             </div>
