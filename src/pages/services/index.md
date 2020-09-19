@@ -17,7 +17,7 @@ homeInspectionBlock:
     image: /img/unnamed.jpg
     text: A detailed overview of the condition of materials and structures within
       the home.
-asbestosBlock:
+asbesdosBlock:
   title: Asbestos testing
   image: /img/charles-deluvio-qja6wdmrnwm-unsplash.jpg
   listitem:
