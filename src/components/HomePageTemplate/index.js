@@ -6,8 +6,7 @@ import { Link } from 'gatsby'
 import Services from '../Services'
 import InfoBlock from '../InfoBlock'
 import Carousel from '../Carousel'
-import GoogleReviews from '../GoogleReviews'
-
+import GoogleReview from '../GoogleReview'
 
 
 const HomePageTemplate = ({
@@ -21,6 +20,7 @@ const HomePageTemplate = ({
   bookingBanner,
   bookingBannerRef,
   servicesRef,
+  googleReviews
 }) => (
     <div>
       <Helmet>
@@ -39,9 +39,9 @@ const HomePageTemplate = ({
               <div className='column is-10 is-offset-1'>
                 <div className='content'>
                   <div>
-                    <h1 className='has-text-weight-semibold is-size-2'>
+                    <h2 className='has-text-weight-semibold is-size-2'>
                       {heading}
-                    </h1>
+                    </h2>
                     <p>{description}</p>
                     <Link className='button is-primary' to='/about'>About us</Link>
                   </div>
@@ -51,7 +51,7 @@ const HomePageTemplate = ({
           </div>
         </div>
       </section>
-      <section className='section hero is-primary' ref={bookingBannerRef}>
+      <section className='section hero is-primary is-bold' ref={bookingBannerRef}>
         <div className='hero-body'>
           <div className='container booking-banner-content'>
             <h3 className='subtitle'>{bookingBanner}</h3>
@@ -65,13 +65,21 @@ const HomePageTemplate = ({
         </div>
       </section>
       <section className='section section--gradient'>
-        <div  className='container '>
+        <div className='container '>
           <InfoBlock content={whyblock} imgSize='large' />
         </div>
       </section>
-      <section className='section section--gradient'>
-        <div className='container'>
-          <GoogleReviews />
+      <section className='section hero is-primary is-bold'>
+        <div className='content'>
+          <h2 className='title has-text-weight-semibold is-size-2 is-white has-text-centered'>What people are saying about us</h2>
+        </div>
+        <div className='columns'>
+          {googleReviews.map(item => (
+            <GoogleReview key={item.node.id} data={item.node} />
+          ))}
+        </div>
+        <div className='content has-text-centered'>
+          <a className='button is-large is-outlined is-white'><img src='/img/googleclear.png' width='50' alt='google icon'/>Leave Us a Review!</a>
         </div>
       </section>
     </div>

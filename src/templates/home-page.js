@@ -9,8 +9,24 @@ import { slideIn, slideOut, fadeIn, fadeOut } from '../utils/animations'
 
 const HomePage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
+  const {allGooglePlacesReview: {edges: googleReviews}} = data
   const bookingBannerRef = useRef(null)
   const servicesRef = useRef(null)
+
+  const randomReviews = (totalReviews) => {
+    const randomIndicies = []
+    const shuffledRandom = []
+    while (randomIndicies.length < 5) {
+      const randomIndex = Math.floor(Math.random()* totalReviews.length)
+      if (!randomIndicies.includes(randomIndex)) {
+        randomIndicies.push(randomIndex)
+      }
+    }
+    totalReviews.filter((item, index) => {
+      return randomIndicies.includes(index) ? item : null
+    }).forEach(review => Math.round(Math.random) === 1 ? shuffledRandom.push(review) : shuffledRandom.unshift(review))
+    return shuffledRandom
+  }
 
 //booking banner animation
   const bookingBannerIntersection = useIntersection(bookingBannerRef, {
@@ -57,6 +73,8 @@ const HomePage = ({ data }) => {
         bookingBanner={frontmatter.bookingBanner}
         bookingBannerRef={bookingBannerRef}
         servicesRef={servicesRef}
+        googleReviews={randomReviews(googleReviews)}
+        // googleReviews={}
       />
     </Layout>
   )
@@ -111,6 +129,19 @@ query IndexPage($id: String) {
         title
       }
       bookingBanner
+    }
+  }
+  allGooglePlacesReview {
+    edges {
+      node {
+        author_name
+        id
+        profile_photo_url
+        rating
+        relative_time_description
+        text
+        time
+      }
     }
   }
 }

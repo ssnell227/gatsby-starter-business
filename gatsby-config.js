@@ -131,5 +131,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-netlify`,
+    {
+      resolve: `gatsby-source-google-places`,
+      options: {
+        placeIds: ["ChIJ23RPbQQBWYcRlPpnjKV_NEw"],
+        apiKey: "AIzaSyBE79YLPQVBCXBrtQkYpx6sSFNFLG3WnME"
+      }
+    }
   ],
 }
