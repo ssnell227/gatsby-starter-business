@@ -74,8 +74,8 @@ const AboutPageTemplate = ({
               </figure>
             </div>
             <div ref={buttonRef} className='column buttons-container'>
-              <Link to='/contact' className='button is-primary is-large'>Contact</Link>
-              <a href='https://schedule-a-home-inspection-uub7y.appointlet.com' target='__blank' className='button is-primary is-large'>Book Now</a>
+              <Link to='/contact' className='button is-primary is-large about-link'>Contact</Link>
+              <a href='https://schedule-a-home-inspection-uub7y.appointlet.com' target='__blank' className='button is-primary is-large about-link'>Book Now</a>
             </div>
           </div>
         </section>

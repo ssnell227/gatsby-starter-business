@@ -15,7 +15,7 @@ const Footer = () => {
                 <img src='/img/FChomeinspection.jpg' width='200' alt='Fremont County Home Inspection logo' />
             </div>
             <div className='level-item stacked'>
-                <img src='https://s3.amazonaws.com/uploads-east-1.nachi.org/program-logos/8/internachi-certified-professional-inspector-cpi-logo-1545171029.?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIQ5VIIQFMV73HDIQ%2F20200916%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200916T174858Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=d7c0420ad53f5049677634d1f6b871fe75d305792a481bb8f57d6574a78ed651' width='150' alt='InterNachi certified home inspector badge'/>
+                <img src='/img/internachi.png' width='150' alt='InterNachi certified home inspector badge'/>
                 <p>#19100604</p>
             </div>
             <div className='level-item stacked'>

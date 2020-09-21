@@ -31,7 +31,7 @@ services:
   - image: /img/outsite-co-r-lk3sqlibw-unsplash.jpg
     title: Home Inspections
   - image: /img/charles-deluvio-qja6wdmrnwm-unsplash.jpg
-    title: Asbesdos testing
+    title: Asbestos testing
   - image: /img/tim-mossholder-vj1enh83l_a-unsplash.jpg
     title: Lead Testing
   - image: /img/featured-testing-for-carbon-monoxide-in-the-home.jpg
@@ -42,7 +42,7 @@ whyblock:
   title: Why choose us?
   image: /img/unnamed.jpg
   listitem:
-    - title: Liscensed
+    - title: Licensed
       text: Inspections are performed by Ryan Morse-Brady, an InterNACHI Certified
         Professional Inspector, with specialized, hands-on training in all
         aspects of residential home safety and structural design.

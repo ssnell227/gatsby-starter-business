@@ -1,70 +1,70 @@
-import React, {useRef, useEffect}  from 'react'
-import {useIntersection} from 'react-use'
+import React, { useRef, useEffect } from 'react'
+import { useIntersection } from 'react-use'
 import Layout from '../components/Layout'
 import ServicesPageTemplate from '../components/ServicesPageTemplate'
-import {graphql} from 'gatsby'
+import { graphql } from 'gatsby'
 
 import { slideIn, slideOut, slideInRight, slideOutRight, fadeIn, fadeOut } from '../utils/animations'
 
 
-const ServicesPage = ({ data}) => {
-    const { frontmatter } = data.markdownRemark
+const ServicesPage = ({ data }) => {
+  const { frontmatter } = data.markdownRemark
 
-    //title animation
-    const titleRef = useRef(null)
-    
-    const titleIntersection = useIntersection(titleRef, {
-      root: null,
-      rootMargin: '0px',
-      threshold: .2
-    })
+  //title animation
+  const titleRef = useRef(null)
 
-    useEffect(() => {
-      if (titleIntersection && titleIntersection.intersectionRatio > .2) {
-        slideIn('.services-title')
-      } else {
+  const titleIntersection = useIntersection(titleRef, {
+    root: null,
+    rootMargin: '0px',
+    threshold: .2
+  })
 
-        slideOut('.services-title')
-      }
-    }, [titleIntersection])
+  useEffect(() => {
+    if (titleIntersection && titleIntersection.intersectionRatio > .2) {
+      slideIn('.services-title')
+    } else {
 
-    //button animation
-    const buttonRef = useRef(null)
+      slideOut('.services-title')
+    }
+  }, [titleIntersection])
 
-    const buttonIntersection = useIntersection(buttonRef, {
-      root: null,
-      rootMargin: '0px',
-      threshold: .2
-    })
+  //button animation
+  const buttonRef = useRef(null)
 
-    useEffect(() => {
-      if (buttonIntersection && buttonIntersection.intersectionRatio > .2) {
-        slideIn('.button-left')
-        slideInRight('.button-right')
-      } else {
-        slideOut('.button-left')
-        slideOutRight('.button-right')
-      }
-    }, [buttonIntersection])
-    return (
-        <Layout>
-            <ServicesPageTemplate
-            title={frontmatter.title}
-            subtitle={frontmatter.subtitle}
-            subtitleTop={frontmatter.subtitleTop}
-            meta_title={frontmatter.meta_title}
-            meta_description={frontmatter.meta_description}
-            asbesdosBlock={frontmatter.asbesdosBlock}
-            homeInspectionBlock={frontmatter.homeInspectionBlock}
-            leadBlock={frontmatter.leadBlock}
-            radonBlock={frontmatter.radonBlock}
-            wellWaterBlock={frontmatter.wellWaterBlock}
-            pricingBlock={frontmatter.pricingBlock}
-            titleRef={titleRef}
-            buttonRef={buttonRef}
-             />
-        </Layout>
-    )
+  const buttonIntersection = useIntersection(buttonRef, {
+    root: null,
+    rootMargin: '0px',
+    threshold: .2
+  })
+
+  useEffect(() => {
+    if (buttonIntersection && buttonIntersection.intersectionRatio > .2) {
+      slideIn('.button-left')
+      slideInRight('.button-right')
+    } else {
+      slideOut('.button-left')
+      slideOutRight('.button-right')
+    }
+  }, [buttonIntersection])
+  return (
+    <Layout>
+      <ServicesPageTemplate
+        title={frontmatter.title}
+        subtitle={frontmatter.subtitle}
+        subtitleTop={frontmatter.subtitleTop}
+        meta_title={frontmatter.meta_title}
+        meta_description={frontmatter.meta_description}
+        asbestosBlock={frontmatter.asbestosBlock}
+        homeInspectionBlock={frontmatter.homeInspectionBlock}
+        leadBlock={frontmatter.leadBlock}
+        radonBlock={frontmatter.radonBlock}
+        wellWaterBlock={frontmatter.wellWaterBlock}
+        pricingBlock={frontmatter.pricingBlock}
+        titleRef={titleRef}
+        buttonRef={buttonRef}
+      />
+    </Layout>
+  )
 }
 
 export default ServicesPage
@@ -78,7 +78,7 @@ export const servicesPageQuery = graphql`
         subtitle
         meta_title
         meta_description
-        asbesdosBlock {
+        asbestosBlock {
           image
           title
         }
@@ -87,7 +87,7 @@ export const servicesPageQuery = graphql`
           text
           title
         }
-        asbesdosBlock {
+        asbestosBlock {
           listitem {
             text
           }

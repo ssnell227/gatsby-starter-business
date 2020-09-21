@@ -4,9 +4,12 @@
 
 .review-card {
     cursor: pointer;
-    transition: transform 100ms;
+    transition: transform 100ms, color 100ms;
     &:hover {
         transform: scale(1.05, 1.05);
+        .star-container {
+            color: gold;
+        }
     }
     .icon-container {
         .star-container {

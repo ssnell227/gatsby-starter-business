@@ -137,6 +137,12 @@ module.exports = {
         placeIds: ["ChIJ23RPbQQBWYcRlPpnjKV_NEw"],
         apiKey: "AIzaSyBE79YLPQVBCXBrtQkYpx6sSFNFLG3WnME"
       }
-    }
+    },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options :{
+    //     trackingId: `UA-160349066-1`
+    //   }
+    // }
   ],
 }

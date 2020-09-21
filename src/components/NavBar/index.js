@@ -18,6 +18,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
       <nav className='navbar sticky-nav' aria-label='main navigation'>
         <div className='navbar-brand'>
           <Link to='/' className='navbar-item'>
+            <img src='/img/circle-logo-FCHI.png'/>
             <strong>Fremont County Home Inspection</strong>
           </Link>
           <button

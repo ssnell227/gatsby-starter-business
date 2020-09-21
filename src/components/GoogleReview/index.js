@@ -64,7 +64,7 @@ const GoogleReview = ({ data: {
                             </div>
                             <div className='content'>
                                 <div className='icon-container'>
-                                    <figure className='icon is-small star-container'>
+                                    <figure className='icon is-small star-container '>
                                         <StarRateIcon />
                                         <StarRateIcon />
                                         <StarRateIcon />

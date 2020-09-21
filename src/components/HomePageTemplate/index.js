@@ -79,7 +79,7 @@ const HomePageTemplate = ({
           ))}
         </div>
         <div className='content has-text-centered'>
-          <a className='button is-large is-outlined is-white'><img src='/img/googleclear.png' width='50' alt='google icon'/>Leave Us a Review!</a>
+          <a href='https://g.page/fremont-county-home-inspection/review?rc' target="__blank" className='button is-large is-outlined is-white'><img src='/img/googleclear.png' width='50' alt='google icon'/>Leave Us a Review!</a>
         </div>
       </section>
     </div>

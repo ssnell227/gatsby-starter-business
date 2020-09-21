@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import {Link} from 'gatsby'
+import { Link } from 'gatsby'
 import './styles.scss'
 
 import InfoBlock from '../InfoBlock'
@@ -11,7 +11,7 @@ const ServicesPageTemplate = ({
     subtitle,
     meta_title,
     meta_description,
-    asbesdosBlock,
+    asbestosBlock,
     homeInspectionBlock,
     leadBlock,
     radonBlock,
@@ -46,14 +46,14 @@ const ServicesPageTemplate = ({
                         </div>
                         <div className='column '>
                             <figure className='image is-square'>
-                                <img src={homeInspectionBlock[1].image} alt={homeInspectionBlock[1].title}  />
+                                <img src={homeInspectionBlock[1].image} alt={homeInspectionBlock[1].title} />
                             </figure>
                             <h3 className='subtitle has-text-centered'>{homeInspectionBlock[1].title}</h3>
                             <p className='has-text-centered'>{homeInspectionBlock[1].text}</p>
                         </div>
                         <div className='column '>
                             <figure className='image is-square'>
-                                <img src={homeInspectionBlock[2].image} alt={homeInspectionBlock[2].title}  />
+                                <img src={homeInspectionBlock[2].image} alt={homeInspectionBlock[2].title} />
                             </figure>
                             <h3 className='subtitle has-text-centered'>{homeInspectionBlock[2].title}</h3>
                             <p className='has-text-centered'>{homeInspectionBlock[2].text}</p>
@@ -67,20 +67,20 @@ const ServicesPageTemplate = ({
                         <div className='level-item' />
                     </div>
                 </section>
-                    <div className='content'>
-                        <h2 className='title is-1 has-text-centered'>Other Services</h2>
-                    </div>
-                <section className='section section--gradient ' id='asbesdos'>
-                        <InfoBlock content={asbesdosBlock} smallImg={true}/>
+                <div className='content'>
+                    <h2 className='title is-1 has-text-centered'>Other Services</h2>
+                </div>
+                <section className='section section--gradient ' id='asbestos'>
+                    <InfoBlock content={asbestosBlock} smallImg={true} />
                 </section>
                 <section className='section section--gradient ' id='lead'>
-                        <InfoBlock content={leadBlock} smallImg={true} />
+                    <InfoBlock content={leadBlock} smallImg={true} />
                 </section>
                 <section className='section section--gradient' id='radon'>
-                        <InfoBlock content={radonBlock} smallImg={true}/>
+                    <InfoBlock content={radonBlock} smallImg={true} />
                 </section>
                 <section className='section section--gradient' id='water'>
-                        <InfoBlock content={wellWaterBlock} smallImg={true} />
+                    <InfoBlock content={wellWaterBlock} smallImg={true} />
                 </section>
                 <section className='section section--gradient' id='pricing'>
                     <h2 className='title is-1 has-text-centered'>{pricingBlock.title}</h2>
