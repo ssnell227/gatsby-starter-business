@@ -1,11 +1,22 @@
 ---
+meta_description: Our home inspections consist of a comprehensive analysis of
+  property conditions. Other services include asbestos, lead, radon, and
+  well-water testing.
+asbesdosBlock:
+  title: Asbestos testing
+  image: /img/charles-deluvio-qja6wdmrnwm-unsplash.jpg
+  listitem:
+    - title: " "
+      text: Inspection and consultation by a licensed and certified asbestos inspector
+        can be performed in both commercial and residential
+        settings.  Inspections are performed using Asbestos Hazard Emergency
+        Response Act (AHERA) guidelines.
 templateKey: services-page
 title: What is a home inspection?
 subtitleTop: Our residential home inspections consist of a comprehensive, "top
   to bottom," analysis of property conditions.
 subtitle: Other Services
-meta_title: Services
-meta_description: Meta description
+meta_title: Services | Fremont County Home Inspection
 homeInspectionBlock:
   - title: Evidence
     text: Gathering photos and measurements with careful attention to detail
@@ -17,15 +28,17 @@ homeInspectionBlock:
     image: /img/unnamed.jpg
     text: A detailed overview of the condition of materials and structures within
       the home.
-asbesdosBlock:
-  title: Asbestos testing
+asbestosBlock:
+  title: Asbestos Testing
   image: /img/charles-deluvio-qja6wdmrnwm-unsplash.jpg
   listitem:
     - title: " "
-      text: Inspection and consultation by a licensed and certified asbestos inspector
-        can be performed in both commercial and residential
-        settings.  Inspections are performed using Asbestos Hazard Emergency
-        Response Act (AHERA) guidelines.
+      text: >-
+        Inspection and consultation by a licensed and certified asbestos
+        inspector
+                can be performed in both commercial and residential
+                settings.  Inspections are performed using Asbestos Hazard Emergency
+                Response Act (AHERA) guidelines.
 leadBlock:
   title: Lead Testing
   image: /img/tim-mossholder-vj1enh83l_a-unsplash.jpg
