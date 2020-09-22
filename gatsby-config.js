@@ -1,3 +1,7 @@
+require('dotenv').config()
+
+const {GOOGLE_PLACES_API, GOOGLE_ANALYTICS_TRACKING_ID} = process.env
+
 const config = require('./config')
 
 const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
@@ -135,13 +139,13 @@ module.exports = {
       resolve: `gatsby-source-google-places`,
       options: {
         placeIds: ["ChIJ23RPbQQBWYcRlPpnjKV_NEw"],
-        apiKey: "AIzaSyBE79YLPQVBCXBrtQkYpx6sSFNFLG3WnME"
+        apiKey: GOOGLE_PLACES_API
       }
     },
     // {
     //   resolve: `gatsby-plugin-google-analytics`,
     //   options :{
-    //     trackingId: `UA-160349066-1`
+    //     trackingId: GOOGLE_ANALYTICS_TRACKING_ID
     //   }
     // }
   ],

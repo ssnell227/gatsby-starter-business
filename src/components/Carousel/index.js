@@ -58,7 +58,7 @@ const Carousel = ({ content }) => {
                         <div className='carousel-icon icon-2'>
                             <SearchIcon />
                         </div>
-                        <h2 className='has-text-weight-bold has-text-right is-size-4 is-size-2-tablet is-size-1-desktop carousel-text title-2'>{content.carousel2.title}</h2>
+                        <h2 className='has-text-weight-bold has-text-centered is-size-4 is-size-2-tablet is-size-1-desktop carousel-text title-2'>{content.carousel2.title}</h2>
                         <p className='carousel-text has-text-right has-text-weight-bold is-size-6 is-size-5-tablet is-size-4-desktop text-2'>{content.carousel2.text}</p>
                         <img src={content.carousel2.image} alt='image of tools used in home inspection'/>
                     </div>

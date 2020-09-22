@@ -47,11 +47,11 @@ const HomePage = ({ data }) => {
   const servicesIntersection = useIntersection(servicesRef, {
     root: null,
     rootMargin: '0px',
-    threshold: .3
+    threshold: .2
   })
 
   useEffect(() => {
-    if (servicesIntersection && servicesIntersection.intersectionRatio > .3) {
+    if (servicesIntersection && servicesIntersection.intersectionRatio > .2) {
       fadeIn('.services-section')
     } else {
       fadeOut('.services-section')

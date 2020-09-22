@@ -1,7 +1,7 @@
 module.exports = {
   siteTitle: `Fremont County Home Inspection`, // Site title.
   siteTitleAlt: 'FC Home Inspection', // Alternative site title for SEO.
-  siteLogo: '/icons/icon-512x512.png', // Logo used for SEO and manifest.
+  siteLogo: '/img/circle-logo-FCHI.png', // Logo used for SEO and manifest.
   siteUrl: 'https://clever-curie-9ad9a0.netlify.app/', // Domain of your website without pathPrefix.
   pathPrefix: '', // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-business/.
   siteDescription: 'Offering comprehensive, affordable home inspection services for the Fremont County, Wyoming area.', // Website description used for RSS feeds/meta description tag.
