@@ -54,7 +54,6 @@ whyblock:
       text: All inspections that we perform offer a close-up look at the structural
         and safety details of a home that may not be apparent at first glance.
 meta_title: Home | Fremont County Home Inspection
-meta_description: Offering comprehensive, affordable home inspection services
-  that are customized to your needs. We serve all areas in Fremont County, WY,
-  and are now able to offer services in the surrounding areas.
+meta_description: Offering comprehensive, affordable home inspection services in
+  the Fremont County, WY and surrounding areas.
 ---
