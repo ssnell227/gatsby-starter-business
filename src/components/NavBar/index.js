@@ -18,7 +18,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
       <nav className='navbar sticky-nav' aria-label='main navigation'>
         <div className='navbar-brand'>
           <Link to='/' className='navbar-item'>
-            <img src='/img/circle-logo-FCHI.png'/>
+            <img src='/img/circle-logo-FCHI.png' alt='Fremont County Home Inspection Logo'/>
             <strong>Fremont County Home Inspection</strong>
           </Link>
           <button
