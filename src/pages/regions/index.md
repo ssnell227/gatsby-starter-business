@@ -1,6 +1,6 @@
 ---
 templateKey: regions-page
-meta_title: Regions Served
+meta_title: Regions Served | Fremont County Home Inspection
 meta_description: We are located in Fremont County, WY, and work in all
   communities throughout this area.
 title: "Check whether we serve your area:"
