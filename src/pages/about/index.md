@@ -1,10 +1,10 @@
 ---
 templateKey: about-page
 title: About Us
-meta_title: "About Us "
-meta_description: "Inspections are performed by Ryan Morse-Brady, an InterNACHI
-  Certified Professional Inspector, with specialized, hands-on training in all
-  aspects of residential home safety and structural design. "
+meta_title: About | Fremont County Home Inspection
+meta_description: Inspections are performed by Ryan Morse-Brady, an InterNACHI
+  Certified Professional Inspector, with training in all aspects of residential
+  home safety.
 aboutBlockItem:
   - title: Knowledge
     subtitle: "Fremont County Home Inspection is a family owned and operated
